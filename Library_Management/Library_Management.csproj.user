@@ -7,21 +7,144 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="bookAddWindow.xaml.cs">
+    <Compile Update="UserController\studentMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserController\teacherMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserController\SearchWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserController\ucAdminandTeacherSearch.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserController\ucBookList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserController\ucStudentSearch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_book_add.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_borrow_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_clear_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_clear_user.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_edit_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_edit_user.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_lend_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_myescrow_books.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_overdue_books.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_return_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_return_confirm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_settings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_student_outofdate_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_student_return_book.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_teacher_confirmation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_user_add.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_welcome_student.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="bookAddWindow.xaml">
+    <Page Update="UserController\studentMainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="UserController\teacherMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserController\SearchWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserController\ucAdminandTeacherSearch.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserController\ucBookList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserController\ucStudentSearch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_book_add.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_borrow_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_clear_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_clear_user.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_edit_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_edit_user.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_lend_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_myescrow_books.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_overdue_books.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_return_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_return_confirm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_student_outofdate_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_student_return_book.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_teacher_confirmation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_user_add.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_welcome_student.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

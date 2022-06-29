@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "lMnbpNTc/YbCKXzhuR1PuUjLLLXPAeVhvwBBEUQNuWHSjldmwK1H1AWXVcfY2LCObrOVlX9D9HmwM7kgZ4C0fw==",
+  "dgSpecHash": "p7M/ut9ZOOghXLIWBIRj+IwSsPCRIY4pyeZvBWAPUYeVJ3Y5gCP84vxQq7wSRPqq4mCchuchj+8ipguvP8nmHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
+  "projectFilePath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Burak\\.nuget\\packages\\autocompletetextbox\\1.5.0\\autocompletetextbox.1.5.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\dotnetprojects.wpftoolkit.datavisualization\\6.1.94\\dotnetprojects.wpftoolkit.datavisualization.6.1.94.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -47,7 +46,6 @@
     "C:\\Users\\Burak\\.nuget\\packages\\system.data.sqlite\\1.0.115.5\\system.data.sqlite.1.0.115.5.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.115.5\\system.data.sqlite.ef6.1.0.115.5.nupkg.sha512",
-    "C:\\Users\\Burak\\.nuget\\packages\\system.data.sqlite.linq\\1.0.115.5\\system.data.sqlite.linq.1.0.115.5.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
@@ -68,29 +66,7 @@
     "C:\\Users\\Burak\\.nuget\\packages\\system.text.encodings.web\\7.0.0-preview.4.22229.4\\system.text.encodings.web.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.text.json\\7.0.0-preview.4.22229.4\\system.text.json.7.0.0-preview.4.22229.4.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\Burak\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Burak\\.nuget\\packages\\wpftextboxautocomplete\\1.0.5\\wpftextboxautocomplete.1.0.5.nupkg.sha512"
+    "C:\\Users\\Burak\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Data.SQLite.Linq 1.0.115.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Data.SQLite.Linq",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WPFTextBoxAutoComplete 1.0.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WPFTextBoxAutoComplete",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

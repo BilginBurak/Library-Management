@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "Library_Management/1.0.0": {
         "dependencies": {
-          "AutoCompleteTextBox": "1.5.0",
           "DotNetProjects.WpfToolkit.DataVisualization": "6.1.94",
           "Microsoft.Data.Sqlite": "7.0.0-preview.4.22229.2",
           "Microsoft.Data.Sqlite.Core": "7.0.0-preview.4.22229.2",
@@ -18,20 +17,10 @@
           "System.Data.SQLite": "1.0.115.5",
           "System.Data.SQLite.Core": "1.0.115.5",
           "System.Data.SQLite.EF6": "1.0.115.5",
-          "System.Data.SQLite.Linq": "1.0.115.5",
-          "System.Linq": "4.3.0",
-          "WPFTextBoxAutoComplete": "1.0.5"
+          "System.Linq": "4.3.0"
         },
         "runtime": {
           "Library_Management.dll": {}
-        }
-      },
-      "AutoCompleteTextBox/1.5.0": {
-        "runtime": {
-          "lib/net6.0-windows7.0/AutoCompleteTextBox.dll": {
-            "assemblyVersion": "1.1.1.0",
-            "fileVersion": "1.1.1.0"
-          }
         }
       },
       "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
@@ -520,14 +509,6 @@
           }
         }
       },
-      "System.Data.SQLite.Linq/1.0.115.5": {
-        "runtime": {
-          "lib/net46/System.Data.SQLite.Linq.dll": {
-            "assemblyVersion": "1.0.115.5",
-            "fileVersion": "1.0.115.5"
-          }
-        }
-      },
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -669,14 +650,6 @@
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
         }
-      },
-      "WPFTextBoxAutoComplete/1.0.5": {
-        "runtime": {
-          "lib/net40/WPFTextBoxAutoComplete.dll": {
-            "assemblyVersion": "1.0.0.2",
-            "fileVersion": "1.0.0.2"
-          }
-        }
       }
     }
   },
@@ -685,13 +658,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "AutoCompleteTextBox/1.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jLv33f1kj/3eO3LWWb7TWb8p7QdQQNHGGlVqIRplWwup2iSZG4RsUGRe+8ZaoBE6ofhod0xjMg9WQrGvQM9tng==",
-      "path": "autocompletetextbox/1.5.0",
-      "hashPath": "autocompletetextbox.1.5.0.nupkg.sha512"
     },
     "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
       "type": "package",
@@ -987,13 +953,6 @@
       "path": "system.data.sqlite.ef6/1.0.115.5",
       "hashPath": "system.data.sqlite.ef6.1.0.115.5.nupkg.sha512"
     },
-    "System.Data.SQLite.Linq/1.0.115.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DI1HiF4vbhvFzDJS9fzNbVVT9em4o0ejyScjyyzxAoS8Toh1H/Fm2hg92h3Su2D5vPqeAKt9A1nlyUEWEpRfoA==",
-      "path": "system.data.sqlite.linq/1.0.115.5",
-      "hashPath": "system.data.sqlite.linq.1.0.115.5.nupkg.sha512"
-    },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1140,13 +1099,6 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
-    },
-    "WPFTextBoxAutoComplete/1.0.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1H3i+AjFD7AQb+N3LKlmvMwnEh7Ym2cP/M0Km/JOWIzuYmGSNasZH48eVFvsrpTPlAm9Al+/Vfw7zVjEBIm1CA==",
-      "path": "wpftextboxautocomplete/1.0.5",
-      "hashPath": "wpftextboxautocomplete.1.0.5.nupkg.sha512"
     }
   }
 }

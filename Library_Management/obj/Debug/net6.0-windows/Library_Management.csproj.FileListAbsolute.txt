@@ -1,84 +1,130 @@
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.exe
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.deps.json
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.runtimeconfig.json
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.pdb
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.AssemblyReference.cache
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management_MarkupCompile.cache
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management_MarkupCompile.lref
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.g.resources
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.AssemblyInfoInputs.cache
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.AssemblyInfo.cs
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.CoreCompileInputs.cache
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\refint\Library_Management.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.pdb
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.genruntimeconfig.cache
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\ref\Library_Management.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucBookList.g.cs
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucBookList.baml
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\EntityFramework.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SQLite.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SQLite.Linq.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.CopyComplete
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\System.Text.Json.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\bookAddWindow.g.cs
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\bookAddWindow.baml
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\WPFTextBoxAutoComplete.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\AutoCompleteTextBox.dll
-C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\bin\Debug\net6.0-windows\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.AssemblyReference.cache
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\bookAddWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\adminMainWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\LoginWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\SearchWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\studentMainWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\teacherMainWindow.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucAdminandTeacherSearch.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucBookList.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucStudentSearch.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_book_add.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_borrow_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_clear_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_clear_user.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_edit_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_edit_user.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_lend_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_myescrow_books.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_overdue_books.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_return_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_return_confirm.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_settings.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_student_outofdate_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_student_return_book.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_teacher_confirmation.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_user_add.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_welcome_student.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management_MarkupCompile.cache
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management_MarkupCompile.lref
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.exe
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.deps.json
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.runtimeconfig.json
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Library_Management.pdb
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\App.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\bookAddWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\adminMainWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\LoginWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\SearchWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\studentMainWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\teacherMainWindow.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucAdminandTeacherSearch.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucBookList.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\UserController\ucStudentSearch.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_book_add.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_borrow_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_clear_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_clear_user.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_edit_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_edit_user.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_lend_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_myescrow_books.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_overdue_books.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_return_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_return_confirm.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_settings.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_student_outofdate_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_student_return_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_teacher_confirmation.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_user_add.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_welcome_student.baml
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.g.resources
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.AssemblyInfoInputs.cache
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.AssemblyInfo.cs
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.CoreCompileInputs.cache
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.csproj.CopyComplete
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\refint\Library_Management.dll
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.pdb
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\Library_Management.genruntimeconfig.cache
+C:\Users\Burak\Desktop\Kutuphane\Library Management\Library_Management\obj\Debug\net6.0-windows\ref\Library_Management.dll

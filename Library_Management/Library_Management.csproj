@@ -13,11 +13,21 @@
     <None Remove="book_cover1.png" />
     <None Remove="book_list.png" />
     <None Remove="cloud-library.png" />
+    <None Remove="Login_title_icon.png" />
+    <None Remove="passwd_login.png" />
+    <None Remove="passwd_login1.png" />
+    <None Remove="SplashScreen1.png" />
+    <None Remove="student.png" />
+    <None Remove="teacher.png" />
+    <None Remove="UserController\find_book.png" />
+    <None Remove="UserController\search_icon-forsearch_screen.png" />
+    <None Remove="UserController\SplashScreen.png" />
+    <None Remove="username_login.png" />
+    <None Remove="username_login1.png" />
     <None Remove="user_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoCompleteTextBox" Version="1.5.0" />
     <PackageReference Include="DotNetProjects.WpfToolkit.DataVisualization" Version="6.1.94" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0-preview.4.22229.2" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.0-preview.4.22229.2" />
@@ -27,9 +37,7 @@
     <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
     <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.115.5" />
-    <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.115.5" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
-    <PackageReference Include="WPFTextBoxAutoComplete" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,11 +46,25 @@
     <Resource Include="book_cover.png" />
     <Resource Include="book_list.png" />
     <Resource Include="cloud-library.png" />
+    <Resource Include="Login_title_icon.png" />
+    <Resource Include="passwd_login.png" />
+    <Resource Include="passwd_login1.png" />
+    <Resource Include="student.png" />
+    <Resource Include="teacher.png" />
+    <Resource Include="UserController\find_book.png" />
+    <Resource Include="UserController\search_icon-forsearch_screen.png" />
+    <Resource Include="UserController\SplashScreen.png" />
+    <Resource Include="username_login.png" />
+    <Resource Include="username_login1.png" />
     <Resource Include="user_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Classes\Parameters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen1.png" />
   </ItemGroup>
 
 </Project>

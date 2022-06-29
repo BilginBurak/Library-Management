@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Library_Management.Windows.uc_book_add"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library_Management.Windows"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1029">
+    <Grid>
+        <Button x:Name="addBookWindow_btn" Content="Add This Book" HorizontalAlignment="Left" Margin="686,471,0,0" VerticalAlignment="Top" Width="136" Height="30" Foreground="White" Click="addBookWindow_btn_Click" Background="#FF4A80AA"/>
+        <Label Content="Book Title" HorizontalAlignment="Left" Margin="106,58,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Author" HorizontalAlignment="Left" Margin="106,108,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Publisher" HorizontalAlignment="Left" Margin="106,159,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Publication date" HorizontalAlignment="Left" Margin="106,209,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="booktitle_txtbox" HorizontalAlignment="Left" Margin="270,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="booktitle_txtbox_TextChanged"/>
+        <TextBox x:Name="author_txtbox" HorizontalAlignment="Left" Margin="270,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="author_txtbox_TextChanged"/>
+        <Label Content="Genre" HorizontalAlignment="Left" Margin="106,310,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Print length" HorizontalAlignment="Left" Margin="106,360,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Language" HorizontalAlignment="Left" Margin="106,411,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="Amount of Stock" HorizontalAlignment="Left" Margin="106,461,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label Content="ISBN" HorizontalAlignment="Left" Margin="106,260,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="publisher_txtbox" HorizontalAlignment="Left" Margin="270,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="publisher_txtbox_TextChanged"/>
+        <!--<TextBox x:Name="publicDate_txtbox" HorizontalAlignment="Left" Margin="284,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Height="30" VerticalContentAlignment="Center" TextChanged="publicDate_txtbox_TextChanged"/>-->
+        <TextBox x:Name="isbn_txtbox" HorizontalAlignment="Left" Margin="270,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="isbn_txtbox_TextChanged" PreviewTextInput="PreviewTextInput"/>
+        <TextBox x:Name="genre_txtbox" HorizontalAlignment="Left" Margin="270,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="lenght_txtbox" HorizontalAlignment="Left" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput"/>
+        <TextBox x:Name="language_txtbox" HorizontalAlignment="Left" Margin="270,411,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="stock_txtbox" HorizontalAlignment="Left" Margin="270,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput"/>
+        <Image x:Name="bookCover_img" HorizontalAlignment="Left" Height="392" Margin="514,58,0,0" VerticalAlignment="Top" Width="328" Source="/book_cover.png"/>
+
+        <TextBlock x:Name="txtblck_author_inCover" HorizontalAlignment="Left" Margin="600,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="190" FontWeight="Bold" TextAlignment="Center" FontStyle="Oblique" FontFamily="Bradley Hand ITC" FontSize="16" Foreground="White" Text=""/>
+        <TextBlock x:Name="txtblck_Publisher_inCover" HorizontalAlignment="Left" Margin="608,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="172" FontWeight="Light" TextAlignment="Center" FontStyle="Oblique" FontFamily="Segoe UI" FontSize="14" LineHeight="6" Foreground="White" Text=""/>
+        <TextBlock x:Name="txtblck_date_inCover" HorizontalAlignment="Left" Margin="608,320,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Height="17" Width="172" TextAlignment="Center" FontFamily="Segoe UI" FontWeight="UltraLight" FontSize="14" Foreground="White"/>
+        <TextBlock x:Name="txtblck_isbn_inCover" HorizontalAlignment="Left" Margin="606,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="174" FontWeight="Light" TextAlignment="Center" FontFamily="Segoe UI" FontSize="14" Foreground="White"/>
+        <Button x:Name="addBookWindow_clear_btn" Content="Clear All" HorizontalAlignment="Left" Margin="532,471,0,0" VerticalAlignment="Top" Width="136" Height="30" Foreground="White" Background="#FF365E7D" Click="addBookWindow_clear_btn_Click"/>
+        <TextBox x:Name="genre_txtbox_Copy" HorizontalAlignment="Left" Margin="620,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="46" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" FontWeight="Bold" Foreground="White" IsEnabled="False">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <DatePicker x:Name="publicDate_datepicker" HorizontalAlignment="Left" Margin="270,209,0,0" VerticalAlignment="Top" Width="200" SelectedDateChanged="publicDate_datepicker_SelectedDateChanged" Height="40" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" PreviewTextInput="PreviewTextInput"/>
+
+    </Grid>
+</UserControl>

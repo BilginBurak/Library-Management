@@ -10,9 +10,9 @@ namespace Library_Management.Classes
     {
 
         #region Addparameters
-        
-        private string bookID;
-        private string bookTitle;
+
+        private string bookID=null;
+        private string bookTitle=null   ;
         private string bookGenre;
         private string publishDate;
         private string authorID;

@@ -2,18 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "AutoCompleteTextBox/1.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0-windows7.0/AutoCompleteTextBox.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/AutoCompleteTextBox.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
         "type": "package",
         "compile": {
@@ -644,15 +632,6 @@
           "lib/netstandard2.1/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.115.5": {
-        "type": "package",
-        "compile": {
-          "lib/net46/System.Data.SQLite.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Data.SQLite.Linq.dll": {}
-        }
-      },
       "System.Diagnostics.Debug/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -948,37 +927,10 @@
             "rid": "win"
           }
         }
-      },
-      "WPFTextBoxAutoComplete/1.0.5": {
-        "type": "package",
-        "compile": {
-          "lib/net40/WPFTextBoxAutoComplete.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WPFTextBoxAutoComplete.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "AutoCompleteTextBox/1.5.0": {
-      "sha512": "jLv33f1kj/3eO3LWWb7TWb8p7QdQQNHGGlVqIRplWwup2iSZG4RsUGRe+8ZaoBE6ofhod0xjMg9WQrGvQM9tng==",
-      "type": "package",
-      "path": "autocompletetextbox/1.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AutoCompleteTextBox.png",
-        "README.md",
-        "autocompletetextbox.1.5.0.nupkg.sha512",
-        "autocompletetextbox.nuspec",
-        "lib/net452/AutoCompleteTextBox.dll",
-        "lib/net472/AutoCompleteTextBox.dll",
-        "lib/net5.0-windows7.0/AutoCompleteTextBox.dll",
-        "lib/net6.0-windows7.0/AutoCompleteTextBox.dll",
-        "lib/netcoreapp3.1/AutoCompleteTextBox.dll"
-      ]
-    },
     "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
       "sha512": "5xmRUH+/F3zRxcI8b93W9OUvOUKXpcHShj7jGJdpBAgQTNPEeMLISA/wsO5egSG74Msx+01xwaYjDFTDTUawhQ==",
       "type": "package",
@@ -2166,32 +2118,6 @@
         "tools/net46/install.ps1"
       ]
     },
-    "System.Data.SQLite.Linq/1.0.115.5": {
-      "sha512": "DI1HiF4vbhvFzDJS9fzNbVVT9em4o0ejyScjyyzxAoS8Toh1H/Fm2hg92h3Su2D5vPqeAKt9A1nlyUEWEpRfoA==",
-      "type": "package",
-      "path": "system.data.sqlite.linq/1.0.115.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/net20/app.config.transform",
-        "content/net20/web.config.transform",
-        "content/net40/app.config.transform",
-        "content/net40/web.config.transform",
-        "content/net45/app.config.transform",
-        "content/net45/web.config.transform",
-        "content/net451/app.config.transform",
-        "content/net451/web.config.transform",
-        "content/net46/app.config.transform",
-        "content/net46/web.config.transform",
-        "lib/net20/System.Data.SQLite.Linq.dll",
-        "lib/net40/System.Data.SQLite.Linq.dll",
-        "lib/net45/System.Data.SQLite.Linq.dll",
-        "lib/net451/System.Data.SQLite.Linq.dll",
-        "lib/net46/System.Data.SQLite.Linq.dll",
-        "system.data.sqlite.linq.1.0.115.5.nupkg.sha512",
-        "system.data.sqlite.linq.nuspec"
-      ]
-    },
     "System.Diagnostics.Debug/4.3.0": {
       "sha512": "ZUhUOdqmaG5Jk3Xdb8xi5kIyQYAA4PnTNlHx1mu9ZY3qv4ELIdKbnL/akbGaKi2RnNUWaZsAs31rvzFdewTj2g==",
       "type": "package",
@@ -3349,24 +3275,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "WPFTextBoxAutoComplete/1.0.5": {
-      "sha512": "1H3i+AjFD7AQb+N3LKlmvMwnEh7Ym2cP/M0Km/JOWIzuYmGSNasZH48eVFvsrpTPlAm9Al+/Vfw7zVjEBIm1CA==",
-      "type": "package",
-      "path": "wpftextboxautocomplete/1.0.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/WPFTextBoxAutoComplete.dll",
-        "lib/net40/WPFTextBoxAutoComplete.pdb",
-        "wpftextboxautocomplete.1.0.5.nupkg.sha512",
-        "wpftextboxautocomplete.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "AutoCompleteTextBox >= 1.5.0",
       "DotNetProjects.WpfToolkit.DataVisualization >= 6.1.94",
       "Microsoft.Data.Sqlite >= 7.0.0-preview.4.22229.2",
       "Microsoft.Data.Sqlite.Core >= 7.0.0-preview.4.22229.2",
@@ -3376,9 +3288,7 @@
       "System.Data.SQLite >= 1.0.115.5",
       "System.Data.SQLite.Core >= 1.0.115.5",
       "System.Data.SQLite.EF6 >= 1.0.115.5",
-      "System.Data.SQLite.Linq >= 1.0.115.5",
-      "System.Linq >= 4.3.0",
-      "WPFTextBoxAutoComplete >= 1.0.5"
+      "System.Linq >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -3387,11 +3297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
+      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
       "projectName": "Library_Management",
-      "projectPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
+      "projectPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
       "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\obj\\",
+      "outputPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3420,10 +3330,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "AutoCompleteTextBox": {
-            "target": "Package",
-            "version": "[1.5.0, )"
-          },
           "DotNetProjects.WpfToolkit.DataVisualization": {
             "target": "Package",
             "version": "[6.1.94, )"
@@ -3460,17 +3366,9 @@
             "target": "Package",
             "version": "[1.0.115.5, )"
           },
-          "System.Data.SQLite.Linq": {
-            "target": "Package",
-            "version": "[1.0.115.5, )"
-          },
           "System.Linq": {
             "target": "Package",
             "version": "[4.3.0, )"
-          },
-          "WPFTextBoxAutoComplete": {
-            "target": "Package",
-            "version": "[1.0.5, )"
           }
         },
         "imports": [
@@ -3494,27 +3392,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Data.SQLite.Linq 1.0.115.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Data.SQLite.Linq",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WPFTextBoxAutoComplete 1.0.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WPFTextBoxAutoComplete",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

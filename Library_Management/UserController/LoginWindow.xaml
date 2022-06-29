@@ -1,0 +1,140 @@
+﻿<Window x:Class="Library_Management.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_Management.UserController"
+        mc:Ignorable="d"
+        Title="Login Library" Height="750" Width="1200" ResizeMode="CanResize" Icon="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\Login_title_icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="Black">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Opacity="0.45" Stretch="UniformToFill" ImageSource="/UserController/SplashScreen.png"/>
+        </Grid.Background>
+
+
+        <Label x:Name="_lbl_email" Content="E-mail" Visibility="Hidden" HorizontalAlignment="Left" Margin="78,52,0,0" VerticalAlignment="Top" Width="140" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <TextBox Style="{DynamicResource RoundCorner}" Visibility="Hidden" x:Name="_txtbx_email" HorizontalAlignment="Left" Margin="78,52,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center"  Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0" TextChanged="_txtbx_email_TextChanged"/>
+
+        <Label x:Name="_lbl_NameSurname" Content="Name and Surname" Visibility="Hidden" HorizontalAlignment="Left" Margin="78,122,0,0" VerticalAlignment="Top" Width="140" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <TextBox Style="{DynamicResource RoundCorner}" Visibility="Hidden" x:Name="_txtbx_NameSurname" HorizontalAlignment="Left" Margin="78,122,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="_txtbx_NameSurname_TextChanged" Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0"/>
+
+
+        <Label x:Name="lbl_wellcome" Content="WELCOME" HorizontalAlignment="Left" Margin="45,75,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Monotype Corsiva"  Foreground="White"/>
+        <Image x:Name="icn_user" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\username_login1.png" Margin="58,243,0,0" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Width="30"/>
+
+        <Label x:Name="loginUserName_lbl" Content="Username, phone or e-mail" HorizontalAlignment="Left" Margin="99,242,0,0" VerticalAlignment="Top" Width="222" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <Label x:Name="loginPasswd_lbl" Content="Password" HorizontalAlignment="Left" Margin="99,332,0,0" VerticalAlignment="Top" Width="114" Height="33" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsHitTestVisible="False" IsEnabled="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <TextBox Style="{DynamicResource RoundCorner}" x:Name="loginUserName_txtbx" HorizontalAlignment="Left" Margin="99,242,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="loginUserName_txtbx_TextChanged" Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0"/>
+        <PasswordBox Style="{DynamicResource PasswordBoxStyle}" x:Name="loginPasswd_pswdbx" HorizontalAlignment="Left" Margin="99,332,0,0" VerticalAlignment="Top" Width="280" Background="{x:Null}" Height="35" PasswordChanged="loginPasswd_pswdbx_PasswordChanged" VerticalContentAlignment="Center" Foreground="White" FontSize="16" Padding="15,0,15,0" FlowDirection="LeftToRight" KeyDown="loginPasswd_pswdbx_KeyDown" GotFocus="loginPasswd_pswdbx_GotFocus"/>
+
+
+        <Label x:Name="loginPasswd_lbl_ext" Content="Password" HorizontalAlignment="Left" Margin="78,332,0,0" VerticalAlignment="Top" Width="113" Height="33" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsHitTestVisible="False" IsEnabled="False" Panel.ZIndex="1" Padding="18,5,5,5" Visibility="Hidden"/>
+        <PasswordBox Style="{DynamicResource PasswordBoxStyle}" x:Name="loginPasswd_pswdbx_ext" HorizontalAlignment="Left" Margin="78,332,0,0" VerticalAlignment="Top" Width="280" Background="{x:Null}" Height="35" PasswordChanged="loginPasswd_pswdbx_ext_PasswordChanged" VerticalContentAlignment="Center" Foreground="White" FontSize="16" Padding="15,0,15,0" Visibility="Hidden"/>
+        <Rectangle HorizontalAlignment="Left" Height="673" Margin="20,20,0,0" VerticalAlignment="Top" Width="418" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-1" OpacityMask="#FF48613F" StrokeStartLineCap="Flat" StrokeThickness="2" Fill="#BF000000">
+
+            <Rectangle.Clip>
+                <RectangleGeometry Rect="0,0,418,673"  RadiusX="30" RadiusY="30"/>
+            </Rectangle.Clip>
+        </Rectangle>
+
+
+        <Label x:Name="_lbl_phone" Content="Phone (5_ _ _ - _ _ _ - _ _ _ _)" Visibility="Hidden" HorizontalAlignment="Left" Margin="78,402,0,0" VerticalAlignment="Top" Width="173" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <TextBox Style="{DynamicResource RoundCorner}" Visibility="Hidden" x:Name="_txtbx_phone" HorizontalAlignment="Left" Margin="78,402,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center"  Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0" TextChanged="_txtbx_phone_TextChanged"/>
+
+
+        <Label x:Name="lbl_forcmbx" Visibility="Hidden" Content="Please Select Role" HorizontalAlignment="Left" Margin="78,472,0,0" VerticalAlignment="Top" Width="136" Height="34" Foreground="#FF484444" VerticalContentAlignment="Center" IsHitTestVisible="False" IsEnabled="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
+        <ComboBox SelectionChanged="cmbbx_forrankchoose_SelectionChanged" x:Name="cmbbx_forrankchoose" Visibility="Hidden" VerticalAlignment="Top" Width="280" Height="34" Background="HotPink" Foreground="Black" VerticalContentAlignment="Center" BorderBrush="White" BorderThickness="0,0,0,2" Margin="78,472,0,0" HorizontalAlignment="Left" Padding="18,3,5,3" AutomationProperties.HelpText="" Focusable="False" FontSize="16">
+            <ComboBox.Effect>
+                <DropShadowEffect/>
+            </ComboBox.Effect>
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Background" Value="LightSteelBlue"/>
+                    <Setter Property="BorderBrush" Value="WhiteSmoke"/>
+                    <!--<Setter Property="/>-->
+                </Style>
+            </ComboBox.ItemContainerStyle>
+            <!--<ComboBoxItem Content="Admin" Foreground="DarkBlue" VerticalContentAlignment="Center" Padding="15,1,4,1" FontSize="16" />-->
+            <ComboBoxItem Content="Student" Foreground="DarkBlue" VerticalContentAlignment="Center" Padding="15,1,4,1" FontSize="16"  />
+            <ComboBoxItem Content="Teacher" Foreground="DarkBlue" VerticalContentAlignment="Center" Padding="15,1,4,1" FontSize="16" />
+        </ComboBox>
+
+
+
+        <Image x:Name="icn_passwd" HorizontalAlignment="Left" Height="30" Margin="58,334,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\passwd_login1.png" OpacityMask="White"/>
+        <Button x:Name="loginbtn_inloginwindow"  Content="LOGIN" HorizontalAlignment="Left" Margin="78,478,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" FontSize="16" Click="loginbtn_inloginwindow_Click" >
+            <!--<Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>-->
+
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button" BasedOn="{StaticResource Buttonround_corner}">
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter Property="Button.Background" Value="CadetBlue" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+
+        </Button>
+        <Button x:Name="rgstrbtn_inloginwindow"  Content="REGISTER" HorizontalAlignment="Left" Margin="78,560,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" FontSize="18" Click="rgstrbtn_inloginwindow_Click" >
+            <!--<Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>-->
+            <Button.Style>
+                <Style TargetType="Button" BasedOn="{StaticResource Buttonround_corner}">
+                    <Style.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter Property="Button.Background" Value="MediumVioletRed" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+
+
+
+        </Button>
+
+        <!--not visible items for register-->
+
+       <Button x:Name="returnloginbtn_inloginwindow"  Content="RETURN TO LOGIN" HorizontalAlignment="Left" Margin="78,633,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" Focusable="False" FontSize="18" Click="returnloginbtn_inloginwindow_Click" Visibility="Hidden">
+            <!--<Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>-->
+
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource Buttonround_corner}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="CadetBlue" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+        <Button x:Name="adminbbtn" Content="Admin" HorizontalAlignment="Left" Margin="78,669,0,0" VerticalAlignment="Top" Width="57" Click="adminbbtn_Click"/>
+        <Button x:Name="teacher_btn" Content="Teacher" HorizontalAlignment="Left" Margin="190,669,0,0" VerticalAlignment="Top" Width="56" Click="teacher_btn_Click"/>
+        <Button x:Name="student_btn" Content="Student" HorizontalAlignment="Left" Margin="299,669,0,0" VerticalAlignment="Top" Width="57" Click="student_btn_Click"/>
+
+        <!--not visible items for register-->
+
+
+
+
+
+
+    </Grid>
+</Window>

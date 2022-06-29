@@ -8,6 +8,7 @@ using System.Data.SQLite;
 using System.Windows;
 using System.Data;
 using Library_Management.Classes;
+using Library_Management.UserController;
 
 
 
@@ -46,36 +47,37 @@ namespace Library_Management.Classes
 
 
         //this is to adding info to database from bookaddwindow
-        private static bool AddDatabasefrombookAddWindow(ParametersforDataBase senddata)
-        {
-            sbyte checkdatabase = 0;
-            SQLiteConnection sQLiteConnectionsendData = new SQLiteConnection(Dbaseconnection.DbAdress);
-            SQLiteCommand sQLiteCommandsendData = new SQLiteCommand("Insert into tbl_BookList (ID,BookTitle,AuthorID,ISBN,Genre,PuplisherID,PublishDate,PageCount,EscrowStatus values(@ID,@BookTitle,@AuthorID,@ISBN,@Genre,@PuplisherID,@PublishDate,@PageCount,@EscrowStatus", sQLiteConnectionsendData);
+        //public static bool AddDatabasefrombookAddWindow(bookAddWindow senddata)
+        //{
+        //    sbyte checkdatabase = 0;
+        //    SQLiteConnection sQLiteConnectionsendData = new SQLiteConnection(Dbaseconnection.DbAdress);
+        //    SQLiteCommand sQLiteCommandsendData = new SQLiteCommand("Insert into tbl_BookList (BookTitle,AuthorID,Genre,PuplisherID,PublishDate,PageCount values(@BookTitle,@AuthorID,@Genre,@PuplisherID,@PublishDate,@PageCount", sQLiteConnectionsendData);
 
-            sQLiteCommandsendData.Parameters.AddWithValue("@ID", senddata.BookID);
-            sQLiteCommandsendData.Parameters.AddWithValue("@BookTitle", senddata.BookTitle);
-            sQLiteCommandsendData.Parameters.AddWithValue("@AuthorID", senddata.AuthorID);
+        //    //sQLiteCommandsendData.Parameters.AddWithValue("@idcode", senddata.BookID);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@BookTitle", senddata.BookTitle);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@AuthorID", senddata.AuthorID);
 
-            sQLiteCommandsendData.Parameters.AddWithValue("@ISBN", senddata.ISBNcode);
-            sQLiteCommandsendData.Parameters.AddWithValue("@Genre", senddata.BookGenre);
-            sQLiteCommandsendData.Parameters.AddWithValue("@PuplisherID", senddata.PublisherId);
-            sQLiteCommandsendData.Parameters.AddWithValue("@PublishDate", senddata.PublishDate);
-            sQLiteCommandsendData.Parameters.AddWithValue("@PageCount", senddata.PageCount);
-            sQLiteCommandsendData.Parameters.AddWithValue("@EscrowStatus", senddata.EscrowStatus);
+        //    //sQLiteCommandsendData.Parameters.AddWithValue("@ISBN", senddata.ISBNcode);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@Genre", senddata.BookGenre);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@PuplisherID", senddata.PublisherId);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@PublishDate", senddata.PublishDate);
+        //    sQLiteCommandsendData.Parameters.AddWithValue("@PageCount", senddata.PageCount);
+        //    //sQLiteCommandsendData.Parameters.AddWithValue("@EscrowStatus", senddata.EscrowStatus);
 
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                sQLiteConnectionsendData.Dispose();
-            }
-            if (checkdatabase == 0) return true;  else return false;
-        }
+        //    try
+        //    {
+        //        sQLiteConnectionsendData.Open();
+        //        checkdatabase   = (sbyte)sQLiteCommandsendData.ExecuteNonQuery();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        sQLiteConnectionsendData.Dispose();
+        //    }
+        //    if (checkdatabase == 0) return true; else return false;
+        //}
     }
 }

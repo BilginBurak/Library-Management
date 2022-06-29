@@ -1,0 +1,242 @@
+﻿<Window x:Name="Admin_control_panel" x:Class="Library_Management.adminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_Management" 
+        mc:Ignorable="d"
+        Title="Library Management System" Height="800" Width="1215" ResizeMode="CanMinimize" Background="#FFFEFEE2" Icon="/cloud-library.png" Loaded="Admin_control_panel_Loaded" SizeToContent="Manual">
+    <Grid Background="#FFC5CECD" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Border Background="#FF2C4B7D" Height="125" VerticalAlignment="Center" HorizontalAlignment="Left" Width="179"/>
+        <Border HorizontalAlignment="Left" Width="179">
+            <DockPanel x:Name="searchicondckpnl" VerticalAlignment="Center" HorizontalAlignment="Center" Mouse.MouseUp="searchicondckpnl_MouseUp">
+                <Image ToolTip="For Search and Find Books">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                    <Image.Style>
+                        <Style TargetType="Image">
+                            <Setter Property="Source" Value="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\searchadminandteacher.png"/>
+                            <Setter Property="Height" Value="auto"/>
+                            <Setter Property="Width" Value="75"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Source" Value="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\searchadminandteacher.png"/>
+                                    <Setter Property="Width" Value="85"/>
+
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </DockPanel>
+        </Border>
+        <StackPanel Background="#FF426FB7" Margin="179,0,0,0" Height="125" VerticalAlignment="Center"/>
+        <StackPanel Margin="0,0,1026,0"/>
+        <Border Background="#FF426FB7" Grid.Row="1" HorizontalAlignment="Left" Width="179" Height="659" VerticalAlignment="Center"/>
+        <StackPanel/>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="bookListBtn" Grid.Row="1" Margin="0,26,1021,553" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="bookListBtn_Click" Visibility="Hidden">
+            <Button.Background>
+                <SolidColorBrush Color="#3F90C1BE"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
+                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
+                <Label Content="Book List" Width="100" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
+
+            </DockPanel>
+
+        </Button>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="userManagementBtninMain" Grid.Row="1" Margin="0,106,1021,473" MaxHeight="75" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" UseLayoutRounding="False" HorizontalContentAlignment="Left" Click="userManagementBtninMain_Click" Visibility="Hidden">
+            <Button.Background>
+                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
+                <Image Width="50" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\user_management.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
+                <Label Content="User Management" Width="124" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" UseLayoutRounding="False" FontSize="14"/>
+
+            </DockPanel>
+        </Button>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="escrowManagementBtninMain" Grid.Row="1" Margin="0,187,1020,392" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="escrowManagementBtninMain_Click" Visibility="Hidden">
+            <Button.Background>
+                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
+                <Image Width="50" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\escrow_management.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
+                <Label Content="Escrow Management" Width="127" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontStyle="Normal" FontFamily="Segoe UI" FontWeight="Normal" FontSize="13" />
+
+            </DockPanel>
+        </Button>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="extrabtn1inmain" Grid.Row="1" Margin="0,266,1021,313" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="extrabtn1inmain_Click" Visibility="Hidden">
+            <Button.Background>
+                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
+                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
+                <Label Content="Book List2" Width="124" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
+
+            </DockPanel>
+        </Button>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="extrabtn2inmain" Grid.Row="1"  Margin="0,344,1021,235" MaxHeight="75"  VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="extrabtn2inmain_Click" Visibility="Hidden">
+            <Button.Background>
+                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
+                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
+                <Label Content="Book List2" Width="125" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
+
+            </DockPanel>
+        </Button>
+        <Image Margin="1080,10,10,10" Source="/administrator.png" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Total Number of Books: " HorizontalAlignment="Left" Margin="226,36,0,0" VerticalAlignment="Top" Width="157" FontSize="14"/>
+        <Label Content="Number of Active Users:" HorizontalAlignment="Left" Margin="226,74,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Number of Borrowed Books: " HorizontalAlignment="Left" Margin="474,34,0,0" VerticalAlignment="Top" Width="185" FontSize="14"/>
+        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="376,38,0,0" VerticalAlignment="Top" Width="93" FontSize="14" Padding="5,5,0,5"/>
+        <Label x:Name="actLbl" Content="" HorizontalAlignment="Left" Margin="382,74,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
+        <Label x:Name="brwLbl" Content="borrowed" HorizontalAlignment="Left" Margin="654,34,0,0" VerticalAlignment="Top" Width="89" FontSize="14"/>
+
+
+
+
+
+        <Grid x:Name="ContentGrd" Grid.Row="1" Margin="179,0,0,0" Background="#4C763CE0" UseLayoutRounding="False">
+
+            <TabControl TabStripPlacement="Left" Margin="-179,0,0,0" Padding="1,0,0,0" Background="#FF426FB7" BorderBrush="{x:Null}" BorderThickness="1,0,1,1">
+                <TabControl.Resources>
+
+                </TabControl.Resources>
+                <TabItem x:Name="tab_welcome" Header="General" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-16" Foreground="#FFD48B07" FontSize="16">
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+
+
+
+                    <Grid Background="#FFD8CECE" Margin="15,0,0,0"/>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+                <TabItem Header="User Management" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-24" Foreground="#FFD48B07" FontSize="16" >
+                    <Grid Background="#B26B5C6F" Margin="15,0,0,0">
+                        <TabControl Padding="2,2,2,2" Background="White">
+                            <TabItem x:Name="tabitem_userconfirm" Header="Teacher Confirmation" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_userconfirm_Loaded" Background="#CC847171">
+                                <Grid x:Name="teacherconfirmgrd" Background="#FFE5E5E5"/>
+                            </TabItem>
+                            <TabItem x:Name="Add_New_User" Header="Add New User" Width="200" Height="50" Loaded="Add_New_User_Loaded">
+                                <Grid x:Name="addusergrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                            <TabItem x:Name="tab_user_edit" Header="Edit User" Width="200" Height="50" Loaded="tab_user_edit_Loaded">
+                                <Grid x:Name="editusergrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                            <TabItem x:Name="tabitem_deleteuser" Header="Delete User" Width="200" Height="50" Loaded="tabitem_deleteuser_Loaded">
+                                <Grid x:Name="deleteusergrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                        </TabControl>
+                    </Grid>
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+                <TabItem Header="Book Management" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-32" Foreground="#FFD48B07" FontSize="16" >
+                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+                        <TabControl Padding="2,2,2,2">
+                            <TabItem x:Name="tabitem_add_book" Header="Book Add" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_add_book_Loaded">
+                                <Grid x:Name="addbookgrd" Background="#FFE5E5E5"/>
+                            </TabItem>
+                            <TabItem x:Name="tab_edit_book" Header="Edit Book" Width="200" Height="50" Loaded="tab_edit_book_Loaded">
+                                <Grid x:Name="editbookgrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                            <TabItem x:Name="tab_delete_book" Header="Delete Book" Width="200" Height="50" Loaded="tab_delete_book_Loaded">
+                                <Grid x:Name="clearbookgrd" Background="#FFE5E5E5" />
+                            </TabItem>
+
+                        </TabControl>
+                    </Grid>
+
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+                <TabItem Header="Escrow Managemenet" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-40" Foreground="#FFD48B07" FontSize="15" >
+                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+                        <TabControl Padding="2,2,2,2">
+                            <TabItem x:Name="tabitem_overduebooks" Header="Overdue Books" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_overduebooks_Loaded">
+                                <Grid x:Name="overduegrd" Background="#FFE5E5E5"/>
+                            </TabItem>
+                            <TabItem x:Name="tab_returnconf" Header="Return Confirmation" Width="200" Height="50" Loaded="tab_returnconf_Loaded">
+                                <Grid x:Name="returnconfgrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                            <TabItem x:Name="tab_LendBook" Header="Lend Book" Width="200" Height="50" Loaded="tab_LendBook_Loaded">
+                                <Grid x:Name="lendbookgrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                            <TabItem x:Name="tab_Returnbook" Header="Return Book" Width="200" Height="50" Loaded="tab_Returnbook_Loaded">
+                                <Grid x:Name="returnbookgrd" Background="#FFE5E5E5" />
+                            </TabItem>
+                        </TabControl>
+                    </Grid>
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+                <TabItem Header="Settings" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-48" Foreground="#FFD48B07" FontSize="16" >
+                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+                        <TabControl Padding="2,2,2,2">
+                            <TabItem x:Name="tabitem_settings" Header="Database Settings" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_overduebooks_Loaded">
+                                <Grid x:Name="settingsgrd" Background="#FFE5E5E5" Loaded="settingsgrd_Loaded"/>
+                            </TabItem>
+
+                        </TabControl>
+                    </Grid>
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+
+
+                <TabItem PreviewMouseDown="tab_logout_MouseLeftButtonDown" Header="LOGOUT" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-56" Foreground="#FFD48B07" FontSize="16" >
+
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    <!--<Label Content="Content goes here..." />-->
+                </TabItem>
+            </TabControl>
+
+        </Grid>
+        <Label x:Name="Dbopening" Content="Label" HorizontalAlignment="Left" Margin="4,593,0,0" VerticalAlignment="Top" Width="171" FontSize="9" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Foreground="White" Height="30" Grid.Row="1"/>
+        <Label x:Name="lblforadmin" Content="gçşlptjdüğ" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label x:Name="lbl_username"  Content="Teacherg" Margin="930,80,0,10" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label Content="Welcome" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Width="124" Height="30" HorizontalContentAlignment="Right" FontFamily="Lucida Handwriting" FontSize="24" Padding="0,-1,1,5"/>
+
+
+
+    </Grid>
+
+
+</Window>
