@@ -7,11 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1029" Loaded="UserControl_Loaded">
     <Grid>
-        <TextBox x:Name="namesurname_txtbx" HorizontalAlignment="Left" Margin="226,103,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" />
-        <TextBox x:Name="username_txtbx" HorizontalAlignment="Left" Margin="226,211,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
-        <TextBox x:Name="email_txtbx" HorizontalAlignment="Left" Margin="226,319,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
-        <TextBox x:Name="phone_txtbx" HorizontalAlignment="Left" Margin="226,427,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
-        <Button Content="Add User" HorizontalAlignment="Left" Margin="650,427,0,0" VerticalAlignment="Top" Height="40" Width="106" Click="Button_Click"/>
+        <TextBox x:Name="namesurname_txtbx" HorizontalAlignment="Left" Margin="226,103,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" Background="#7FC8F79B" BorderBrush="#CC41651F" />
+        <TextBox x:Name="username_txtbx" HorizontalAlignment="Left" Margin="226,211,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <TextBox x:Name="email_txtbx" HorizontalAlignment="Left" Margin="226,319,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <TextBox x:Name="phone_txtbx" HorizontalAlignment="Left" Margin="226,427,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Content="Add User" HorizontalAlignment="Left" Margin="650,427,0,0" VerticalAlignment="Top" Height="40" Width="106" Click="Button_Click" Background="#FF426FB7"/>
         <Label Content="Name Surname" HorizontalAlignment="Left" Margin="226,76,0,0" VerticalAlignment="Top" Width="214" Padding="15,5,5,5" VerticalContentAlignment="Center" Height="27"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="226,184,0,0" VerticalAlignment="Top" Width="214" Padding="15,5,5,5" VerticalContentAlignment="Center" Height="27"/>
         <Label Content="E-mail" HorizontalAlignment="Left" Margin="226,292,0,0" VerticalAlignment="Top" Width="214" Padding="15,5,5,5" VerticalContentAlignment="Center" Height="27"/>
@@ -19,9 +19,9 @@
         <Label Content="Password" HorizontalAlignment="Left" Margin="542,76,0,0" VerticalAlignment="Top" Width="214" Padding="15,5,5,5" VerticalContentAlignment="Center" Height="27"/>
         <Label Content="Retype Password" HorizontalAlignment="Left" Margin="542,184,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="27"/>
         <Label Content="User Level" HorizontalAlignment="Left" Margin="542,292,0,0" VerticalAlignment="Top" Width="214" Padding="15,5,5,5" VerticalContentAlignment="Center" Height="27"/>
-        <ComboBox x:Name="cmbbx_rankselect" HorizontalAlignment="Left" Margin="542,319,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,3,5,3" VerticalContentAlignment="Center"/>
-        <PasswordBox x:Name="passwd_pass" HorizontalAlignment="Left" Margin="542,103,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,0,0,0" VerticalContentAlignment="Center"/>
-        <PasswordBox x:Name="passwd_pass_ext" HorizontalAlignment="Left" Margin="542,211,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,0,0,0" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbbx_rankselect" HorizontalAlignment="Left" Margin="542,319,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,3,5,3" VerticalContentAlignment="Center" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <PasswordBox x:Name="passwd_pass" HorizontalAlignment="Left" Margin="542,103,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,0,0,0" VerticalContentAlignment="Center" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <PasswordBox x:Name="passwd_pass_ext" HorizontalAlignment="Left" Margin="542,211,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,0,0,0" VerticalContentAlignment="Center" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
 
     </Grid>
 </UserControl>

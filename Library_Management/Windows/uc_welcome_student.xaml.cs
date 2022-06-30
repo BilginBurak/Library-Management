@@ -62,12 +62,12 @@ namespace Library_Management.Windows
              Random random = new Random();
             int totaluser = Convert.ToInt32(Dbaseconnection.selectTable("select count(userId) from tblUsers").Rows[0][0].ToString());
             int num = random.Next(1, totaluser);
-            lbl_activeuser.Content = "There are currently "+ num + " active users";
+            lbl_activeuser.Content = "There are currently ["+ num + "] active users";
 
-            lbl_totaluser.Content = "There are " + totaluser + " users registered in the system";
+            lbl_totaluser.Content = "There are [" + totaluser + "] users registered in the system";
 
-            lbl_totalbook.Content = "Instant total number of books " +Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
-            lbl_totalborrow.Content = "Total " + borrowedbooksnumber.ToString() + " books borrowed";
+            lbl_totalbook.Content = "Instant total number of books [" +Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString())+ "]";
+            lbl_totalborrow.Content = "Total [" + borrowedbooksnumber.ToString() + "] books borrowed";
 
 
         }

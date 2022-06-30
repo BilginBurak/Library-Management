@@ -11,12 +11,12 @@
 
 
 
-        <DataGrid x:Name="booklistdtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,60,0,60" CanUserAddRows="False" />
+        <DataGrid x:Name="booklistdtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,60,0,60" CanUserAddRows="False" Background="#7FC8F79B" HorizontalGridLinesBrush="#CC41651F" VerticalGridLinesBrush="#CC41651F" />
 
 
-        <Button Content="Clear" HorizontalAlignment="Left" Margin="970,10,0,0" VerticalAlignment="Top" Height="38" Width="177" Click="Button_Click" FontSize="16"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Content="Clear" HorizontalAlignment="Left" Margin="970,10,0,0" VerticalAlignment="Top" Height="38" Width="177" Click="Button_Click" FontSize="16" Background="#FF006DFF"/>
 
-        <TextBox KeyDown="txtbxforsearch_KeyDown" x:Name="txtbxforsearch" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" Height="38" TextChanged="txtbxforsearch_TextChanged" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
+        <TextBox KeyDown="txtbxforsearch_KeyDown" x:Name="txtbxforsearch" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" Height="38" TextChanged="txtbxforsearch_TextChanged" VerticalContentAlignment="Center" Padding="15,0,0,0" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
 
         <ComboBox x:Name="cmbbxforsearchscreen" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" Width="180" Height="38" Panel.ZIndex="12" VerticalContentAlignment="Center" Text="Select Category" AutomationProperties.HelpText="asdasdas" Padding="15,3,5,3"/>
 
@@ -26,7 +26,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -36,7 +36,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -51,7 +51,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -62,7 +62,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -78,7 +78,7 @@
             <ComboBoxItem Content="200"/>
         </ComboBox>
         <Label x:Name="lblsearch" Content="Search in :" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="143" Height="38" VerticalContentAlignment="Center"/>
-        <CheckBox x:Name="chckbx_notbook" Content="show also books that are not" HorizontalAlignment="Left" Margin="240,767,0,0" VerticalAlignment="Top" Click="chckbx_notbook_Click" Visibility="Hidden"/>
+        <CheckBox x:Name="chckbx_notbook" Content="show also books that are not" HorizontalAlignment="Left" Margin="240,767,0,0" VerticalAlignment="Top" Click="chckbx_notbook_Click" Visibility="Hidden" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="736,757,0,0" VerticalAlignment="Top" Width="306" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5"/>
 
     </Grid>

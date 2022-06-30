@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Library_Management.UserController"
         xmlns:Custom="http://wpfcontrols.com/" x:Name="SearchingWindow" x:Class="Library_Management.UserController.SearchWindow"
         mc:Ignorable="d"
-        Title="Search Screen" Icon="/UserController/search_icon-forsearch_screen.png" Loaded="SearchingWindow_Loaded" Height="850" Width="1250"  MinWidth="1200" MinHeight="800">
+        Title="Search Screen" Icon="/UserController/search_icon-forsearch_screen.png" Loaded="SearchingWindow_Loaded" Height="850" Width="1250"  MinWidth="1200" MinHeight="800" ResizeMode="CanMinimize">
 
     <Grid x:Name="searchwindowgrid"/>
 </Window>

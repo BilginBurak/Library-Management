@@ -191,12 +191,13 @@ namespace Library_Management
                
 
             }
-            
 
+            
 
             if (PublicMethods.loggedUserRank == "0" || PublicMethods.loggedUserRank == "-1")
             {
                 Library_Management.studentMainWindow studentMainWindow = new Library_Management.studentMainWindow();
+                this.Close();
                 studentMainWindow.Show();
                 studentMainWindow.lblforteacher.Content = "@" + PublicMethods.loggedUserName;
                 studentMainWindow.lblforadmin.Content = Dbaseconnection.selectTable("select NameSurname from tblUsers where UserName Like '%" + PublicMethods.loggedUserName + "%'").Rows[0][0].ToString();
@@ -206,6 +207,8 @@ namespace Library_Management
             if (PublicMethods.loggedUserRank == "1")
             {
                 Library_Management.teacherMainWindow teacherMainWindow = new Library_Management.teacherMainWindow();
+                this.Close();
+
                 teacherMainWindow.Show();
                 teacherMainWindow.lblforadmin.Content = Dbaseconnection.selectTable("select NameSurname from tblUsers where UserName Like '%" + PublicMethods.loggedUserName + "%'").Rows[0][0].ToString();
                 teacherMainWindow.lblforteacher.Content = "@" + PublicMethods.loggedUserName;
@@ -216,15 +219,15 @@ namespace Library_Management
             if (PublicMethods.loggedUserRank == "2")
             {
                 Library_Management.adminMainWindow adminMain = new Library_Management.adminMainWindow();
-                //this.Close();
+                this.Close();
                 adminMain.Show();
                  adminMain.lblforadmin.Content = Dbaseconnection.selectTable("select NameSurname from tblUsers where UserName Like '%" + PublicMethods.loggedUserName + "%'").Rows[0][0].ToString();
-                adminMain.lbl_username.Content = "@" + PublicMethods.loggedUserName;
+                adminMain.lblforteacher.Content = "@" + PublicMethods.loggedUserName;
                 Dbaseconnection.selectTable("update tblUsers set LastLogin=GETDATE() where UserName='" + PublicMethods.loggedUserName + "'");
 
             }
 
-            this.Close();
+            
 
 
 

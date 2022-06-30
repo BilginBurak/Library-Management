@@ -44,77 +44,7 @@
         <StackPanel Margin="0,0,1026,0"/>
         <Border Background="#FF426FB7" Grid.Row="1" HorizontalAlignment="Left" Width="179" Height="659" VerticalAlignment="Center"/>
         <StackPanel/>
-        <Button Style="{DynamicResource Buttonround_corner}" x:Name="bookListBtn" Grid.Row="1" Margin="0,26,1021,553" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="bookListBtn_Click" Visibility="Hidden">
-            <Button.Background>
-                <SolidColorBrush Color="#3F90C1BE"/>
-            </Button.Background>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
-                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
-                <Label Content="Book List" Width="100" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
-
-            </DockPanel>
-
-        </Button>
-        <Button Style="{DynamicResource Buttonround_corner}" x:Name="userManagementBtninMain" Grid.Row="1" Margin="0,106,1021,473" MaxHeight="75" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" UseLayoutRounding="False" HorizontalContentAlignment="Left" Click="userManagementBtninMain_Click" Visibility="Hidden">
-            <Button.Background>
-                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
-            </Button.Background>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
-                <Image Width="50" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\user_management.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
-                <Label Content="User Management" Width="124" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" UseLayoutRounding="False" FontSize="14"/>
-
-            </DockPanel>
-        </Button>
-        <Button Style="{DynamicResource Buttonround_corner}" x:Name="escrowManagementBtninMain" Grid.Row="1" Margin="0,187,1020,392" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="escrowManagementBtninMain_Click" Visibility="Hidden">
-            <Button.Background>
-                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
-            </Button.Background>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
-                <Image Width="50" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\escrow_management.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
-                <Label Content="Escrow Management" Width="127" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontStyle="Normal" FontFamily="Segoe UI" FontWeight="Normal" FontSize="13" />
-
-            </DockPanel>
-        </Button>
-        <Button Style="{DynamicResource Buttonround_corner}" x:Name="extrabtn1inmain" Grid.Row="1" Margin="0,266,1021,313" MaxHeight="75" MaxWidth="179" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="extrabtn1inmain_Click" Visibility="Hidden">
-            <Button.Background>
-                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
-            </Button.Background>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
-                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
-                <Label Content="Book List2" Width="124" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
-
-            </DockPanel>
-        </Button>
-        <Button Style="{DynamicResource Buttonround_corner}" x:Name="extrabtn2inmain" Grid.Row="1"  Margin="0,344,1021,235" MaxHeight="75"  VerticalContentAlignment="Stretch" FlowDirection="LeftToRight" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Click="extrabtn2inmain_Click" Visibility="Hidden">
-            <Button.Background>
-                <SolidColorBrush Color="#3F90C1BE" Opacity="1"/>
-            </Button.Background>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <DockPanel LastChildFill="False" Height="41" Width="179" RenderTransformOrigin="0.913,0.565">
-                <Image Width="50" Source="/book_list.png" Height="30" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" MinWidth="30" MinHeight="30" HorizontalAlignment="Stretch"/>
-                <Label Content="Book List2" Width="125" Foreground="White" Height="38" RenderTransformOrigin="0.505,0.573" DockPanel.Dock="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="14"/>
-
-            </DockPanel>
-        </Button>
         <Image Margin="1070,0,0,0" Source="/administrator.png" Height="125" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="Total Number of Books: " HorizontalAlignment="Left" Margin="226,36,0,0" VerticalAlignment="Top" Width="157" FontSize="14"/>
-        <Label Content="Number of Active Users:" HorizontalAlignment="Left" Margin="226,74,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="376,36,0,0" VerticalAlignment="Top" Width="93" FontSize="14" Padding="5,5,0,5"/>
-        <Label x:Name="actLbl" Content="" HorizontalAlignment="Left" Margin="382,74,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
 
 
 
@@ -235,9 +165,9 @@
             </TabControl>
 
         </Grid>
-        <Label x:Name="lblforadmin" Content="gçşlptjdüğ" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
-        <Label x:Name="lbl_username"  Content="Teacherg" Margin="930,80,0,10" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
-        <Label Content="Welcome" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Width="124" Height="30" HorizontalContentAlignment="Right" FontFamily="Lucida Handwriting" FontSize="24" Padding="0,-1,1,5"/>
+        <Label x:Name="lblforadmin" Content="ADMINISTRATOR" Margin="830,10,0,61" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="224" FontSize="24" Padding="5,0,5,5" VerticalContentAlignment="Center" FontStyle="Italic"/>
+        <Label x:Name="lblforteacher"  Content="@admin" Margin="830,64,0,7" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="224" FontSize="20" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label Content="Welcome Home..." HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Width="361" Height="57" HorizontalContentAlignment="Left" FontFamily="Lucida Handwriting" FontSize="35" Padding="0,-1,1,5" VerticalContentAlignment="Center"/>
 
 
 

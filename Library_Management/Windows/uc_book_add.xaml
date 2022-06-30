@@ -12,20 +12,20 @@
         <Label Content="Author" HorizontalAlignment="Left" Margin="106,108,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="Publisher" HorizontalAlignment="Left" Margin="106,159,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="Publication date" HorizontalAlignment="Left" Margin="106,209,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="booktitle_txtbox" HorizontalAlignment="Left" Margin="270,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="booktitle_txtbox_TextChanged"/>
-        <TextBox x:Name="author_txtbox" HorizontalAlignment="Left" Margin="270,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="author_txtbox_TextChanged"/>
+        <TextBox x:Name="booktitle_txtbox" HorizontalAlignment="Left" Margin="270,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="booktitle_txtbox_TextChanged" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
+        <TextBox x:Name="author_txtbox" HorizontalAlignment="Left" Margin="270,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="author_txtbox_TextChanged" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
         <Label Content="Genre" HorizontalAlignment="Left" Margin="106,310,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="Print length" HorizontalAlignment="Left" Margin="106,360,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="Language" HorizontalAlignment="Left" Margin="106,411,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="Amount of Stock" HorizontalAlignment="Left" Margin="106,461,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
         <Label Content="ISBN" HorizontalAlignment="Left" Margin="106,260,0,0" VerticalAlignment="Top" Width="160" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="publisher_txtbox" HorizontalAlignment="Left" Margin="270,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="publisher_txtbox_TextChanged"/>
+        <TextBox x:Name="publisher_txtbox" HorizontalAlignment="Left" Margin="270,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="publisher_txtbox_TextChanged" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
         <!--<TextBox x:Name="publicDate_txtbox" HorizontalAlignment="Left" Margin="284,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Height="30" VerticalContentAlignment="Center" TextChanged="publicDate_txtbox_TextChanged"/>-->
-        <TextBox x:Name="isbn_txtbox" HorizontalAlignment="Left" Margin="270,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="isbn_txtbox_TextChanged" PreviewTextInput="PreviewTextInput"/>
-        <TextBox x:Name="genre_txtbox" HorizontalAlignment="Left" Margin="270,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="lenght_txtbox" HorizontalAlignment="Left" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput"/>
-        <TextBox x:Name="language_txtbox" HorizontalAlignment="Left" Margin="270,411,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="stock_txtbox" HorizontalAlignment="Left" Margin="270,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput"/>
+        <TextBox x:Name="isbn_txtbox" HorizontalAlignment="Left" Margin="270,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" TextChanged="isbn_txtbox_TextChanged" PreviewTextInput="PreviewTextInput" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
+        <TextBox x:Name="genre_txtbox" HorizontalAlignment="Left" Margin="270,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
+        <TextBox x:Name="lenght_txtbox" HorizontalAlignment="Left" Margin="270,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
+        <TextBox x:Name="language_txtbox" HorizontalAlignment="Left" Margin="270,411,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
+        <TextBox x:Name="stock_txtbox" HorizontalAlignment="Left" Margin="270,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="40" VerticalContentAlignment="Center" PreviewTextInput="PreviewTextInput" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
         <Image x:Name="bookCover_img" HorizontalAlignment="Left" Height="392" Margin="514,58,0,0" VerticalAlignment="Top" Width="328" Source="/book_cover.png"/>
 
         <TextBlock x:Name="txtblck_author_inCover" HorizontalAlignment="Left" Margin="600,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="190" FontWeight="Bold" TextAlignment="Center" FontStyle="Oblique" FontFamily="Bradley Hand ITC" FontSize="16" Foreground="White" Text=""/>
@@ -41,7 +41,7 @@
                 <SolidColorBrush Color="White" Opacity="0"/>
             </TextBox.Background>
         </TextBox>
-        <DatePicker x:Name="publicDate_datepicker" HorizontalAlignment="Left" Margin="270,209,0,0" VerticalAlignment="Top" Width="200" SelectedDateChanged="publicDate_datepicker_SelectedDateChanged" Height="40" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" PreviewTextInput="PreviewTextInput"/>
+        <DatePicker x:Name="publicDate_datepicker" HorizontalAlignment="Left" Margin="270,209,0,0" VerticalAlignment="Top" Width="200" SelectedDateChanged="publicDate_datepicker_SelectedDateChanged" Height="40" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" PreviewTextInput="PreviewTextInput" Background="#7FC8F79B" BorderBrush="#FF5F7B45"/>
 
     </Grid>
 </UserControl>

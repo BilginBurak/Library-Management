@@ -33,32 +33,14 @@ namespace Library_Management
 
         private void Admin_control_panel_Loaded(object sender, RoutedEventArgs e)
         {
-            Random randomforactive = new();
-            int rndact = randomforactive.Next(10, 80);
-            actLbl.Content = rndact.ToString();
+            
         
 
-            refreshifo();
 
         }
        
-        private void refreshifo()
-        {
-            int totalbook = Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
-            ttlLbl1.Content = totalbook;
-
-        }
-
-        private void bookListBtn_Click(object sender, RoutedEventArgs e)
-        {
-            bookListBtn.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-            userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            //AddUserClassw(ContentGrd, new Library_Management.UserController.ucStudentSearch());
-            
-        }
+        
+    
 
 
         public static void AddUserClassw(Grid grd, UserControl uc)
@@ -72,52 +54,11 @@ namespace Library_Management
         }
 
 
-        private void userManagementBtninMain_Click(object sender, RoutedEventArgs e)
-        {
-            userManagementBtninMain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-            bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            refreshifo();
-        }
-
-        private void escrowManagementBtninMain_Click(object sender, RoutedEventArgs e)
-        {
-            escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-            bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            refreshifo();
-        }
-
-        private void extrabtn1inmain_Click(object sender, RoutedEventArgs e)
-        {
-            extrabtn1inmain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-            bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            refreshifo();
-        }
-
-        private void extrabtn2inmain_Click(object sender, RoutedEventArgs e)
-        {
-            extrabtn2inmain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-            bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-            refreshifo();
-        }
-
         private void searchicondckpnl_MouseUp(object sender, MouseButtonEventArgs e)
         {
             SearchWindow searchWindow = new SearchWindow();
             searchWindow.ShowDialog();
-            refreshifo();
+             
         }
 
        
@@ -125,60 +66,60 @@ namespace Library_Management
         private void tabitem_userconfirm_Loaded(object sender, RoutedEventArgs e)
         {
 
-            refreshifo();
+            
             AddUserClassw(teacherconfirmgrd, new Library_Management.Windows.uc_teacher_confirmation());
         }
 
 
         private void Add_New_User_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(addusergrd, new Library_Management.Windows.uc_user_add()); refreshifo();
+            AddUserClassw(addusergrd, new Library_Management.Windows.uc_user_add());  
         }
 
         private void tab_user_edit_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(editusergrd, new Library_Management.Windows.uc_edit_user()); refreshifo();
+            AddUserClassw(editusergrd, new Library_Management.Windows.uc_edit_user());  
         }
 
         private void tabitem_deleteuser_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(deleteusergrd, new Library_Management.Windows.uc_clear_user()); refreshifo();
+            AddUserClassw(deleteusergrd, new Library_Management.Windows.uc_clear_user());  
         }
 
         private void tabitem_add_book_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(addbookgrd, new Library_Management.Windows.uc_book_add()); refreshifo();
+            AddUserClassw(addbookgrd, new Library_Management.Windows.uc_book_add());  
         }
 
         private void tab_edit_book_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(editbookgrd, new Library_Management.Windows.uc_edit_book()); refreshifo();
+            AddUserClassw(editbookgrd, new Library_Management.Windows.uc_edit_book());  
         } 
 
         private void tab_delete_book_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(clearbookgrd, new Library_Management.Windows.uc_clear_book()); refreshifo();
+            AddUserClassw(clearbookgrd, new Library_Management.Windows.uc_clear_book());  
         }
 
         private void tabitem_overduebooks_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(overduegrd, new Library_Management.Windows.uc_overdue_books()); refreshifo();
+            AddUserClassw(overduegrd, new Library_Management.Windows.uc_overdue_books());  
 
         }
 
         private void tab_LendBook_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(lendbookgrd, new Library_Management.Windows.uc_lend_book()); refreshifo();
+            AddUserClassw(lendbookgrd, new Library_Management.Windows.uc_lend_book());  
         }
 
         private void tab_Returnbook_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(returnbookgrd, new Library_Management.Windows.uc_return_book()); refreshifo();
+            AddUserClassw(returnbookgrd, new Library_Management.Windows.uc_return_book());  
         }
 
         private void settingsgrd_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(settingsgrd, new Library_Management.Windows.uc_settings()); refreshifo();
+            AddUserClassw(settingsgrd, new Library_Management.Windows.uc_settings());  
 
         }
 
@@ -198,18 +139,18 @@ namespace Library_Management
 
         private void tab_returnconf_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(returnconfgrd, new Library_Management.Windows.uc_return_confirm()); refreshifo();
+            AddUserClassw(returnconfgrd, new Library_Management.Windows.uc_return_confirm());  
 
         }
         private void tab_deletedbook_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(deletedbooksgrd, new Library_Management.Windows.uc_deleted_book()); refreshifo();
+            AddUserClassw(deletedbooksgrd, new Library_Management.Windows.uc_deleted_book());  
 
         }
 
         private void tab_welcome_Loaded(object sender, RoutedEventArgs e)
         {
-            AddUserClassw(welcomegrd, new Library_Management.Windows.uc_welcome_admin()); refreshifo();
+            AddUserClassw(welcomegrd, new Library_Management.Windows.uc_welcome_admin());  
 
         }
     }

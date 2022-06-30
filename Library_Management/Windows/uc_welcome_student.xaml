@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="658" d:DesignWidth="1035" Loaded="UserControl_Loaded">
     <Grid IsHitTestVisible="False">
-        <DataGrid x:Name="dtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="465,520,10,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Vertical" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" FontSize="11" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="560" FlowDirection="LeftToRight" Visibility="Hidden">
+        <DataGrid x:Name="dtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="465,30,10,490" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Vertical" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" FontSize="11" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="560" FlowDirection="LeftToRight" Visibility="Hidden">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Overdue Books:" Width="100" CanUserSort="False" CanUserReorder="False" IsReadOnly="True"/>
 
@@ -20,7 +20,7 @@
             </DataGrid.Resources>
 
         </DataGrid>
-        <DataGrid x:Name="dtgrdtotalread" d:ItemsSource="{d:SampleData ItemCount=30}" Margin="30,72,0,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Horizontal" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="220" FlowDirection="LeftToRight" Visibility="Visible" Height="557" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,0">
+        <DataGrid x:Name="dtgrdtotalread" d:ItemsSource="{d:SampleData ItemCount=30}" Margin="30,72,0,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Horizontal" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="220" FlowDirection="LeftToRight" Visibility="Visible" Height="557" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,0">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Transparent" />
@@ -28,10 +28,10 @@
                 </Style>
             </DataGrid.Resources>
         </DataGrid>
-        <Label Content="-Top Readers Corner-" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="220" FontSize="20"/>
-        <Label x:Name="lbl_totaluser" Content="Label" HorizontalAlignment="Left" Margin="558,30,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <Label x:Name="lbl_activeuser" Content="Label" HorizontalAlignment="Left" Margin="558,82,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <Label x:Name="lbl_totalbook" Content="Label" HorizontalAlignment="Left" Margin="558,133,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <Label x:Name="lbl_totalborrow" Content="Label" HorizontalAlignment="Left" Margin="558,184,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label Content="-Top Readers Corner-" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="220" FontSize="20" Height="42" Background="#7FC8F79B" BorderThickness="0,0,0,3" BorderBrush="#CC41651F"/>
+        <Label x:Name="lbl_totaluser" Content="Label" HorizontalAlignment="Left" Margin="657,459,0,0" VerticalAlignment="Top" Width="335" Height="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderBrush="#CC41651F" BorderThickness="0,0,0,1" FontSize="16"/>
+        <Label x:Name="lbl_activeuser" Content="Label" HorizontalAlignment="Left" Margin="657,505,0,0" VerticalAlignment="Top" Width="335" Height="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderBrush="#CC41651F" BorderThickness="0,0,0,1" FontSize="16"/>
+        <Label x:Name="lbl_totalbook" Content="Label" HorizontalAlignment="Left" Margin="657,551,0,0" VerticalAlignment="Top" Width="335" Height="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderBrush="#CC41651F" BorderThickness="0,0,0,1" FontSize="16"/>
+        <Label x:Name="lbl_totalborrow" Content="Label" HorizontalAlignment="Left" Margin="657,597,0,0" VerticalAlignment="Top" Width="335" Height="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" BorderBrush="#CC41651F" BorderThickness="0,0,0,1" FontSize="16"/>
     </Grid>
 </UserControl>

@@ -47,11 +47,11 @@
 
 
 
-        <Label x:Name="lblforadmin" Content="gçşlptjdüğ" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
-        <Label x:Name="lblforteacher"  Content="Teacherg" Margin="930,80,0,10" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblforadmin" Content="STUDENT" Margin="830,10,0,61" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="224" FontSize="24" Padding="5,0,5,5" VerticalContentAlignment="Center" FontStyle="Italic"/>
+        <Label x:Name="lblforteacher"  Content="@student" Margin="830,64,0,7" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="224" FontSize="20" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
         <Image x:Name="profilphoto" Margin="1070,0,0,0" Source="/student.png" Height="125" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="244,34,0,0" VerticalAlignment="Top" Width="302" FontSize="14" Padding="5,5,0,5" VerticalContentAlignment="Center"/>
-        <Label x:Name="actLbl" Content="rand" HorizontalAlignment="Left" Margin="244,72,0,0" VerticalAlignment="Top" Width="302" FontSize="14" VerticalContentAlignment="Center"/>
+        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="244,34,0,0" VerticalAlignment="Top" Width="302" FontSize="14" Padding="5,5,0,5" VerticalContentAlignment="Center" Visibility="Hidden"/>
+        <Label x:Name="actLbl" Content="rand" HorizontalAlignment="Left" Margin="244,72,0,0" VerticalAlignment="Top" Width="302" FontSize="14" VerticalContentAlignment="Center" Visibility="Hidden"/>
 
 
         <Grid x:Name="ContentGrd" Grid.Row="1" Margin="179,0,0,0" Background="#4C763CE0" UseLayoutRounding="False">
@@ -67,7 +67,7 @@
 
 
 
-                    <Grid x:Name="welcomegrd" Background="#FFE5E5E5" Margin="15,0,0,0"/>
+                    <Grid x:Name="welcomegrd" Background="White" Margin="15,0,0,0"/>
                 </TabItem>
                 <!--<TabItem Header="Book Management" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-24" Foreground="#FFD48B07" FontSize="16" >
                     -->
@@ -135,16 +135,16 @@
                     <Grid Background="#CC016114" Margin="15,0,0,0">
                         <TabControl Padding="2,2,2,2">
                             <TabItem x:Name="outofdate" Header="Out of Date Book" Width="200" Margin="-2,-2,-2,1" Height="50" Loaded="outofdate_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
-                                <Grid x:Name="outofdatestudentgrd" Background="#FFE5E5E5" />
+                                <Grid x:Name="outofdatestudentgrd" Background="White" />
                             </TabItem>
                             <!--<TabItem x:Name="tab_myescrowbook" Header="My Escrow Books" Width="200" Height="50" Loaded="tab_myescrowbook_Loaded">
                                 <Grid x:Name="myescrowbookgrd" Background="#FFE5E5E5" />
                             </TabItem>-->
                             <TabItem x:Name="tab_borrowbooks" Header="Borrow Book" Height="50" Width="200" Margin="-2,-2,-2,1" Loaded="tab_borrowbooks_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
-                                <Grid x:Name="borrowbooksgrd" Background="#FFE5E5E5"/>
+                                <Grid x:Name="borrowbooksgrd" Background="White"/>
                             </TabItem>
                             <TabItem x:Name="tab_Returnbookstudent" Header="Return Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_Returnbookstudent_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
-                                <Grid x:Name="Returnbookstudentgrd" Background="#FFE5E5E5" />
+                                <Grid x:Name="Returnbookstudentgrd" Background="White" />
                             </TabItem>
 
                         </TabControl>
@@ -176,7 +176,7 @@
             </TabControl>
 
         </Grid>
-        <Label Content="Welcome" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Width="124" Height="30" HorizontalContentAlignment="Right" FontFamily="Lucida Handwriting" FontSize="24" Padding="0,-1,1,5"/>
+        <Label Content="Welcome Home..." HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Width="377" Height="57" HorizontalContentAlignment="Left" FontFamily="Lucida Handwriting" FontSize="35" Padding="0,-1,1,5" VerticalContentAlignment="Center"/>
 
 
 

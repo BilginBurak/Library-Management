@@ -47,10 +47,6 @@
 
 
         <Image Margin="1070,-8,0,0" Source="/UserController/teacher.png" Height="125" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Content="Total Number of Books: " HorizontalAlignment="Left" Margin="226,36,0,0" VerticalAlignment="Top" Width="157" FontSize="14"/>
-        <Label Content="Number of Active Users:" HorizontalAlignment="Left" Margin="226,74,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="376,36,0,0" VerticalAlignment="Top" Width="93" FontSize="14" Padding="5,5,0,5"/>
-        <Label x:Name="actLbl" Content="" HorizontalAlignment="Left" Margin="382,74,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
 
 
         <Grid x:Name="ContentGrd" Grid.Row="1" Margin="179,0,0,0" Background="#4C763CE0" UseLayoutRounding="False">
@@ -160,9 +156,9 @@
             </TabControl>
 
         </Grid>
-        <Label x:Name="lblforadmin" Content="teacher" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
-        <Label x:Name="lblforteacher"  Content="Teacherg" Margin="930,80,0,10" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
-        <Label Content="Welcome" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Width="124" Height="30" HorizontalContentAlignment="Right" FontFamily="Lucida Handwriting" FontSize="24" Padding="0,-1,1,5"/>
+        <Label x:Name="lblforadmin" Content="TEACHER" Margin="830,10,0,61" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="224" FontSize="24" Padding="5,0,5,5" VerticalContentAlignment="Center" FontStyle="Italic"/>
+        <Label x:Name="lblforteacher"  Content="@teacher" Margin="830,64,0,7" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="224" FontSize="20" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label Content="Welcome Home..." HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Width="365" Height="57" HorizontalContentAlignment="Left" FontFamily="Lucida Handwriting" FontSize="35" Padding="0,-1,1,5" VerticalContentAlignment="Center"/>
 
 
 

@@ -11,12 +11,12 @@
 
 
 
-        <DataGrid x:Name="booklistdtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,60,0,60" CanUserAddRows="False" />
+        <DataGrid x:Name="booklistdtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,60,0,60" CanUserAddRows="False" Background="#7FC8F79B" HorizontalGridLinesBrush="#CC41651F" VerticalGridLinesBrush="#CC41651F" />
 
 
-        <Button Content="Clear" HorizontalAlignment="Left" Margin="970,10,0,0" VerticalAlignment="Top" Height="38" Width="177" Click="Button_Click" FontSize="16"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Content="Clear" HorizontalAlignment="Left" Margin="970,10,0,0" VerticalAlignment="Top" Height="38" Width="177" Click="Button_Click" FontSize="16" Background="#FF006DFF"/>
 
-        <TextBox KeyDown="txtbxforsearch_KeyDown" x:Name="txtbxforsearch" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" Height="38" TextChanged="txtbxforsearch_TextChanged" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
+        <TextBox KeyDown="txtbxforsearch_KeyDown" x:Name="txtbxforsearch" HorizontalAlignment="Left" Margin="400,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" Height="38" TextChanged="txtbxforsearch_TextChanged" VerticalContentAlignment="Center" Padding="15,0,0,0" BorderBrush="#CC41651F" Background="#7FC8F79B"/>
 
         <ComboBox x:Name="cmbbxforsearchscreen" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" Width="180" Height="38" Panel.ZIndex="12" VerticalContentAlignment="Center" Text="Select Category" AutomationProperties.HelpText="asdasdas" Padding="15,3,5,3"/>
 
@@ -26,7 +26,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -36,7 +36,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -45,42 +45,42 @@
         <Label x:Name="totalpagelbl" Content="1" HorizontalAlignment="Left" Margin="604,757,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center"/>
         <Label Content="/" HorizontalAlignment="Left" Margin="596,757,0,0" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <ComboBox MouseLeave="cmbbxforskippage_MouseLeave" x:Name="cmbbxforskippage" HorizontalAlignment="Left" Margin="533,759,0,0" VerticalAlignment="Top" Width="64" VerticalContentAlignment="Center" FontSize="16" Padding="10,3,4,3" IsEditable="True" SelectedIndex="0"/>
-        <Label Content="&gt;" HorizontalAlignment="Left" Margin="647,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" IsHitTestVisible="False" Foreground="Black"/>
-        <Label Content="&lt;" HorizontalAlignment="Left" Margin="473,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False"/>
-        <Button Click="firstpagebtn_Click" x:Name="firstpagebtn" Margin="434,759,738,14" Background="#FF718C88" FontSize="16">
+        <Label Content="&gt;" HorizontalAlignment="Left" Margin="647,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" IsHitTestVisible="False" Foreground="Black" Background="{x:Null}"/>
+        <Label Content="&lt;" HorizontalAlignment="Left" Margin="473,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False" Background="{x:Null}"/>
+        <Button Click="firstpagebtn_Click" x:Name="firstpagebtn" Margin="434,759,738,14" Background="#FF006DFF" FontSize="16">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="&lt;&lt;" HorizontalAlignment="Left" Margin="434,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False"/>
+        <Label Content="&lt;&lt;" HorizontalAlignment="Left" Margin="434,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False" Background="{x:Null}"/>
         <Button Click="lastpagebtn_Click" x:Name="lastpagebtn" Margin="686,759,486,14" Background="#FF718C88" FontSize="16">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Fill="#FF718C88"/>
+                        <Ellipse Fill="#FF006DFF"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="&gt;&gt;" HorizontalAlignment="Left" Margin="686,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False"/>
+        <Label Content="&gt;&gt;" HorizontalAlignment="Left" Margin="686,759,0,0" VerticalAlignment="Top" Height="27" Width="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial Black" IsEnabled="False" Foreground="Black" IsHitTestVisible="False" Background="{x:Null}"/>
         <Label Content="Number of Items Shown:" HorizontalAlignment="Left" Margin="942,760,0,0" VerticalAlignment="Top" Width="142"/>
-        <ComboBox SelectionChanged="cmbbxshowitemselector_SelectionChanged" x:Name="cmbbxshowitemselector" HorizontalAlignment="Left" Margin="1089,760,0,0" VerticalAlignment="Top" Width="81" Height="29" VerticalContentAlignment="Center" Padding="17,3,5,3">
+        <ComboBox SelectionChanged="cmbbxshowitemselector_SelectionChanged" x:Name="cmbbxshowitemselector" HorizontalAlignment="Left" Margin="1089,760,0,0" VerticalAlignment="Top" Width="81" Height="29" VerticalContentAlignment="Center" Padding="17,3,5,3" BorderBrush="#CC41651F">
             <ComboBoxItem Content="25"/>
             <ComboBoxItem Content="50"/>
             <ComboBoxItem Content="75"/>
             <ComboBoxItem Content="100"/>
             <ComboBoxItem Content="200"/>
         </ComboBox>
-        <Button Background="AliceBlue" Click="userSwitchforSearchScreen_Click" x:Name="userSwitchforSearchScreen" Content="User"  HorizontalAlignment="Left" Margin="31,762,0,0" VerticalAlignment="Top" Width="92"/>
-        <Button Background="AliceBlue" Click="bookSwitchforSearchScreen_Click" x:Name="bookSwitchforSearchScreen" Content="Book" HorizontalAlignment="Left" Margin="136,762,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Background="#4CC8F79B" Click="userSwitchforSearchScreen_Click" x:Name="userSwitchforSearchScreen" Content="User"  HorizontalAlignment="Left" Margin="31,757,0,0" VerticalAlignment="Top" Width="92" Height="30" BorderBrush="#CC41651F"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Background="#4CC8F79B" Click="bookSwitchforSearchScreen_Click" x:Name="bookSwitchforSearchScreen" Content="Book" HorizontalAlignment="Left" Margin="136,757,0,0" VerticalAlignment="Top" Width="75" Height="30" BorderBrush="#CC41651F"/>
         <Label x:Name="lblsearch" Content="Search in :" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="143" Height="38" VerticalContentAlignment="Center"/>
-        <CheckBox x:Name="chckbx_notbook" Content="show also books that are not" HorizontalAlignment="Left" Margin="240,767,0,0" VerticalAlignment="Top" Click="chckbx_notbook_Click" Visibility="Hidden"/>
+        <CheckBox x:Name="chckbx_notbook" Content="show also books that are not" HorizontalAlignment="Left" Margin="240,767,0,0" VerticalAlignment="Top" Click="chckbx_notbook_Click" Visibility="Hidden" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="736,757,0,0" VerticalAlignment="Top" Width="306" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5"/>
 
     </Grid>

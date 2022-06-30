@@ -8,19 +8,19 @@
              d:DesignHeight="600" d:DesignWidth="1029" Loaded="UserControl_Loaded">
     <Grid>
 
-        <Button x:Name="Clear" Content="Clean" HorizontalAlignment="Left" Margin="594,25,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="Clear_Click"/>
-        <TextBox x:Name="txtbx_search" HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" Height="30" Padding="15,0,0,0" VerticalContentAlignment="Center" TextChanged="txtbx_search_TextChanged"/>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="Clear" Content="Clean" HorizontalAlignment="Left" Margin="594,25,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="Clear_Click" Background="#FF426FB7"/>
+        <TextBox x:Name="txtbx_search" HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" Height="30" Padding="15,0,0,0" VerticalContentAlignment="Center" TextChanged="txtbx_search_TextChanged" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
         <Label x:Name="lbl_textbx" Content="Search Book or User" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" Width="214" Padding="17,0,5,0" VerticalContentAlignment="Center" Height="30" IsEnabled="False" IsHitTestVisible="False"/>
 
-        <DataGrid x:Name="datagrd_duedatebook" d:ItemsSource="{d:SampleData ItemCount=5}" Width="689" HorizontalAlignment="Left" VerticalAlignment="Top" Height="466" Margin="25,84,0,0" CanUserAddRows="False"  MouseUp="datagrd_duedatebook_MouseUp" IsReadOnly="True" FontSize="11.7"/>
+        <DataGrid x:Name="datagrd_duedatebook" d:ItemsSource="{d:SampleData ItemCount=5}" Width="689" HorizontalAlignment="Left" VerticalAlignment="Top" Height="466" Margin="25,84,0,0" CanUserAddRows="False"  MouseUp="datagrd_duedatebook_MouseUp" IsReadOnly="True" FontSize="11.7" Background="#7FC8F79B" VerticalGridLinesBrush="#CC41651F" HorizontalGridLinesBrush="#CC41651F"/>
 
-        <TextBox x:Name="name_surname_txtbx" HorizontalAlignment="Left" Margin="761,84,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" />
-        <TextBox x:Name="phone_txtbx" HorizontalAlignment="Left" Margin="761,173,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="name_surname_txtbx" HorizontalAlignment="Left" Margin="761,84,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F" />
+        <TextBox x:Name="phone_txtbx" HorizontalAlignment="Left" Margin="761,173,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
 
-        <TextBox x:Name="booktitle_txtbx1" HorizontalAlignment="Left" Margin="761,263,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" />
-        <TextBox x:Name="author_txtbx" HorizontalAlignment="Left" Margin="761,352,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="booktitle_txtbx1" HorizontalAlignment="Left" Margin="761,263,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F" />
+        <TextBox x:Name="author_txtbx" HorizontalAlignment="Left" Margin="761,352,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
 
-        <TextBox x:Name="duedate_txtbx" HorizontalAlignment="Left" Margin="761,441,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="duedate_txtbx" HorizontalAlignment="Left" Margin="761,441,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
 
         <Label Content="Book Title" HorizontalAlignment="Left" Margin="761,238,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
         <Label Content="Author" HorizontalAlignment="Left" Margin="761,327,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
@@ -30,8 +30,8 @@
 
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="25,550,0,0" VerticalAlignment="Top" Width="305" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5"/>
 
-        <Button x:Name="btnEdit" Content="Contact" HorizontalAlignment="Left" Margin="868,510,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnEdit_Click" HorizontalContentAlignment="Center" />
-        <CheckBox x:Name="chckbx_contact" Content="Contacted" HorizontalAlignment="Left" Margin="761,510,0,0" VerticalAlignment="Top" Height="40" Width="102" VerticalContentAlignment="Center" BorderThickness="1,1,1,1" IsHitTestVisible="False"/>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="btnEdit" Content="Contact" HorizontalAlignment="Left" Margin="868,510,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnEdit_Click" HorizontalContentAlignment="Center" Background="#FF426FB7" />
+        <CheckBox x:Name="chckbx_contact" Content="Contacted" HorizontalAlignment="Left" Margin="761,510,0,0" VerticalAlignment="Top" Height="40" Width="102" VerticalContentAlignment="Center" BorderThickness="1,1,1,1" IsHitTestVisible="False" Background="#4CC8F79B" BorderBrush="#CC41651F"/>
 
 
     </Grid>

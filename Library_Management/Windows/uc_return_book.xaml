@@ -9,11 +9,11 @@
     <Grid>
 
 
-        <Button x:Name="Clear" Content="Clean" HorizontalAlignment="Left" Margin="514,25,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="Clear_Click"/>
-        <TextBox x:Name="txtbx_search" HorizontalAlignment="Left" Margin="97,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30" Padding="15,0,0,0" VerticalContentAlignment="Center" TextChanged="txtbx_search_TextChanged"/>
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="Clear" Content="Clean" HorizontalAlignment="Left" Margin="514,25,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="Clear_Click" Background="#FF426FB7"/>
+        <TextBox x:Name="txtbx_search" HorizontalAlignment="Left" Margin="97,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30" Padding="15,0,0,0" VerticalContentAlignment="Center" TextChanged="txtbx_search_TextChanged" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
         <Label x:Name="lbl_textbx" Content="Search Book or User" HorizontalAlignment="Left" Margin="98,25,0,0" VerticalAlignment="Top" Width="214" Padding="17,0,5,0" VerticalContentAlignment="Center" Height="30" IsEnabled="False" IsHitTestVisible="False"/>
 
-        <DataGrid x:Name="datagrd_duedatebook" d:ItemsSource="{d:SampleData ItemCount=5}" Width="950" HorizontalAlignment="Left" VerticalAlignment="Top" Height="407" Margin="25,84,0,0" CanUserAddRows="False"  MouseUp="datagrd_duedatebook_MouseUp" IsReadOnly="True" FontSize="11.7"/>
+        <DataGrid x:Name="datagrd_duedatebook" d:ItemsSource="{d:SampleData ItemCount=5}" Width="950" HorizontalAlignment="Left" VerticalAlignment="Top" Height="407" Margin="25,84,0,0" CanUserAddRows="False"  MouseUp="datagrd_duedatebook_MouseUp" IsReadOnly="True" FontSize="11.7" Background="#7FC8F79B" HorizontalGridLinesBrush="#CC41651F" VerticalGridLinesBrush="#CC41651F"/>
 
         <!--<TextBox x:Name="name_surname_txtbx" HorizontalAlignment="Left" Margin="761,84,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" />
         <TextBox x:Name="phone_txtbx" HorizontalAlignment="Left" Margin="761,173,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
@@ -31,10 +31,10 @@
 
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="639,25,0,0" VerticalAlignment="Top" Width="261" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5" HorizontalContentAlignment="Right"/>
 
-        <Button x:Name="btnEdit" Content="Return" HorizontalAlignment="Left" Margin="793,516,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnEdit_Click" HorizontalContentAlignment="Center" />
-        <TextBox x:Name="name_surname_txtbx2" HorizontalAlignment="Left" Margin="408,516,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="0,0,0,0" FontSize="11" HorizontalContentAlignment="Center" IsReadOnly="True" />
+        <Button Style="{DynamicResource Buttonround_corner}" x:Name="btnEdit" Content="Return" HorizontalAlignment="Left" Margin="793,516,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnEdit_Click" HorizontalContentAlignment="Center" Background="#FF426FB7" />
+        <TextBox x:Name="name_surname_txtbx2" HorizontalAlignment="Left" Margin="408,516,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="0,0,0,0" FontSize="11" HorizontalContentAlignment="Center" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F" />
 
-        <TextBox x:Name="booktitle_txtbx2" HorizontalAlignment="Left" Margin="102,516,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="0,0,0,0" FontSize="11" HorizontalContentAlignment="Center" IsReadOnly="True" />
+        <TextBox x:Name="booktitle_txtbx2" HorizontalAlignment="Left" Margin="102,516,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="0,0,0,0" FontSize="11" HorizontalContentAlignment="Center" IsReadOnly="True" Background="#7FC8F79B" BorderBrush="#CC41651F" />
         <Label Content="&lt;&lt;&lt;&lt;&lt;" HorizontalAlignment="Left" Margin="317,516,0,0" VerticalAlignment="Top" Height="35" Width="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
 

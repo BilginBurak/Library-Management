@@ -8,10 +8,10 @@
              d:DesignHeight="600" d:DesignWidth="1029" Loaded="UserControl_Loaded">
     <Grid>
         <Label Content="Book Limit" HorizontalAlignment="Left" Margin="610,175,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
-        <TextBox x:Name="book_txtbx" HorizontalAlignment="Left" Margin="610,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Height="56" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="book_txtbx" HorizontalAlignment="Left" Margin="610,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Height="56" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
         <Label Content="Day Limit" HorizontalAlignment="Left" Margin="240,175,0,0" VerticalAlignment="Top" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14"/>
-        <TextBox x:Name="day_txtbx" HorizontalAlignment="Left" Margin="240,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Height="56" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
-        <Button Content="Apply Settings" HorizontalAlignment="Left" Margin="410,377,0,0" VerticalAlignment="Top" Width="120" Height="60" FontSize="14" Click="Button_Click"/>
-
+        <TextBox x:Name="day_txtbx" HorizontalAlignment="Left" Margin="240,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Height="56" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Background="#7FC8F79B" BorderBrush="#CC41651F"/>
+        <Button Style="{DynamicResource Buttonround_corner}" Content="Apply Settings" HorizontalAlignment="Left" Margin="410,377,0,0" VerticalAlignment="Top" Width="120" Height="60" FontSize="14" Click="Button_Click" Background="#FF426FB7"/>
+ 
     </Grid>
 </UserControl>
