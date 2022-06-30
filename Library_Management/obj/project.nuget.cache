@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p7M/ut9ZOOghXLIWBIRj+IwSsPCRIY4pyeZvBWAPUYeVJ3Y5gCP84vxQq7wSRPqq4mCchuchj+8ipguvP8nmHg==",
+  "dgSpecHash": "CTI3in1Lfatq/POT5Lv9exOBEW7pfz5N/3eKn2Zps7BigvXTdhIRAx+qA1PSq7JV1S76e/zMTbz/oLPyNI7dUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
+  "projectFilePath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Burak\\.nuget\\packages\\dotnetprojects.wpftoolkit.datavisualization\\6.1.94\\dotnetprojects.wpftoolkit.datavisualization.6.1.94.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

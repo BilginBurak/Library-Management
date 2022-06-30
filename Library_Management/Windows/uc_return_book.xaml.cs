@@ -95,24 +95,22 @@ namespace Library_Management.Windows
 
                 DataRowView drv = datagrd_duedatebook.SelectedItem as DataRowView;
 
-                string srQuery2, srQuery1, srQuery0;
+                string srQuery3,srQuery2, srQuery1, srQuery0;
                 srQuery0 = $@" delete from tblescrowbooks where (BookId= '"+ drv["BookId"].ToString() + "' and UserId='" + drv["UserId"].ToString() + "')";
                 srQuery1 = $@" UPDATE tblBooks SET AmountofStock=(AmountofStock+1) WHERE BookId='" + drv["BookId"].ToString() + "'";
                 
                 srQuery2 = $@" UPDATE tblUsers SET escrowlimit=(escrowlimit+1) WHERE (UserId='" + drv["UserId"].ToString() + "' and userrank<1)";
-                
-               
+                srQuery3 = $@" UPDATE tblUsers SET TotalRead=(TotalRead+1) WHERE UserId='" + drv["UserId"].ToString() + "'";
                 //if (chckbx_contact.IsChecked == true)
                 //{
                 //    srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=0  WHERE UserId='" + drv["UserId"].ToString() + "'";
 
                 //}
                 //else srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=1  WHERE UserId='" + drv["UserId"].ToString() + "'";
-
-                Dbaseconnection.updateDeleteInsert(srQuery0);
                 Dbaseconnection.updateDeleteInsert(srQuery1);
-
                 Dbaseconnection.updateDeleteInsert(srQuery2);
+                Dbaseconnection.updateDeleteInsert(srQuery3);
+                Dbaseconnection.updateDeleteInsert(srQuery0);
                 cleartxtbox();
                 
                

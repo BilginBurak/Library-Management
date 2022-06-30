@@ -10,7 +10,7 @@
         <DataGrid x:Name="dtgrd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="465,520,10,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Vertical" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" FontSize="11" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="560" FlowDirection="LeftToRight" Visibility="Hidden">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Overdue Books:" Width="100" CanUserSort="False" CanUserReorder="False" IsReadOnly="True"/>
-                
+
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
@@ -19,6 +19,14 @@
                 </Style>
             </DataGrid.Resources>
 
+        </DataGrid>
+        <DataGrid x:Name="dtgrdtotalread" d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,364,0,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Horizontal" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="220" FlowDirection="LeftToRight" Visibility="Visible" Height="265" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,0">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="FontWeight" Value="ExtraBold"/>
+                </Style>
+            </DataGrid.Resources>
         </DataGrid>
     </Grid>
 </UserControl>

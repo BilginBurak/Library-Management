@@ -50,11 +50,19 @@ namespace Library_Management.Windows
             int outdatebook = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT (escrowıd) from tblEscrowbooks where (username= '" + PublicMethods.loggedUserName + "' and deadline<GETDATE())").Rows[0][0].ToString());
             if (outdatebook > 0) dtgrd.Visibility = Visibility.Visible;
 
+            string srQuery1 = $@"select top 10 totalread,namesurname from tblusers order by totalread desc";
+            //string srQuery = $@"select Bookname,date_format(deadline, '%d %m %y') from tblEscrowbooks where (username= '" + PublicMethods.loggedUserName + "' and deadline<GETDATE())";
+            ////srQuery = $@" SELECT * FROM tblEscrowBooks ORDER BY UserId";  Dbaseconnection.selectTable(srQuery);
+            DataTable dtData1 = Dbaseconnection.selectTable(srQuery1);
+            DataView dvData1 = new DataView(dtData1);
+            dtgrdtotalread.ItemsSource = dvData1;
+            dtgrdtotalread.Columns[1].Header = "Name Surname";
+            dtgrdtotalread.Columns[0].Header = "Total  ";
 
 
         }
 
-     
+
 
     }
 }

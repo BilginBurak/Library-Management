@@ -165,13 +165,13 @@
                 </TabItem>
 
 
-                <TabItem x:Name="studentreturntab" Header="Details333" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-56" Foreground="#FFD48B07" FontSize="16" >
+                <!--<TabItem x:Name="studentreturntab" Header="Details333" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-56" Foreground="#FFD48B07" FontSize="16" >
                     
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
-                    <!--<Label Content="Content goes here..." />-->
-                </TabItem>
+                    --><!--<Label Content="Content goes here..." />--><!--
+                </TabItem>-->
             </TabControl>
 
         </Grid>

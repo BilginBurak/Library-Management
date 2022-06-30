@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management.UserController"
         mc:Ignorable="d"
-        Title="Login Library" Height="750" Width="1200" ResizeMode="CanResize" Icon="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\Login_title_icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="Black">
+        Title="Login Library" Height="750" Width="1200" ResizeMode="CanMinimize" Icon="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\Login_title_icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="Black">
     <Grid>
         <Grid.Background>
             <ImageBrush Opacity="0.45" Stretch="UniformToFill" ImageSource="/UserController/SplashScreen.png"/>
@@ -39,7 +39,7 @@
 
 
         <Label x:Name="_lbl_phone" Content="Phone (5_ _ _ - _ _ _ - _ _ _ _)" Visibility="Hidden" HorizontalAlignment="Left" Margin="78,402,0,0" VerticalAlignment="Top" Width="173" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
-        <TextBox Style="{DynamicResource RoundCorner}" Visibility="Hidden" x:Name="_txtbx_phone" HorizontalAlignment="Left" Margin="78,402,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center"  Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0" TextChanged="_txtbx_phone_TextChanged"/>
+        <TextBox Style="{DynamicResource RoundCorner}" Visibility="Hidden" x:Name="_txtbx_phone" HorizontalAlignment="Left" Margin="78,402,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="280" Height="34" Background="{x:Null}" VerticalContentAlignment="Center"  Foreground="White" BorderThickness="0,0,0,2" BorderBrush="White" FontSize="16" Padding="15,0,15,0" TextChanged="_txtbx_phone_TextChanged" PreviewTextInput="PreviewTextInput"/>
 
 
         <Label x:Name="lbl_forcmbx" Visibility="Hidden" Content="Please Select Role" HorizontalAlignment="Left" Margin="78,472,0,0" VerticalAlignment="Top" Width="136" Height="34" Foreground="#FF484444" VerticalContentAlignment="Center" IsHitTestVisible="False" IsEnabled="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
@@ -106,7 +106,7 @@
 
         <!--not visible items for register-->
 
-       <Button x:Name="returnloginbtn_inloginwindow"  Content="RETURN TO LOGIN" HorizontalAlignment="Left" Margin="78,633,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" Focusable="False" FontSize="18" Click="returnloginbtn_inloginwindow_Click" Visibility="Hidden">
+        <Button x:Name="returnloginbtn_inloginwindow"  Content="RETURN TO LOGIN" HorizontalAlignment="Left" Margin="78,633,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" Focusable="False" FontSize="18" Click="returnloginbtn_inloginwindow_Click" Visibility="Hidden">
             <!--<Button.Background>
                 <SolidColorBrush Color="White" Opacity="0.2"/>
             </Button.Background>-->
@@ -125,9 +125,9 @@
             </Button.Style>
 
         </Button>
-        <Button x:Name="adminbbtn" Content="Admin" HorizontalAlignment="Left" Margin="78,669,0,0" VerticalAlignment="Top" Width="57" Click="adminbbtn_Click"/>
-        <Button x:Name="teacher_btn" Content="Teacher" HorizontalAlignment="Left" Margin="190,669,0,0" VerticalAlignment="Top" Width="56" Click="teacher_btn_Click"/>
-        <Button x:Name="student_btn" Content="Student" HorizontalAlignment="Left" Margin="299,669,0,0" VerticalAlignment="Top" Width="57" Click="student_btn_Click"/>
+        <Button x:Name="adminbbtn" Content="Admin" HorizontalAlignment="Left" Margin="866,676,0,0" VerticalAlignment="Top" Width="57" Click="adminbbtn_Click"/>
+        <Button x:Name="teacher_btn" Content="Teacher" HorizontalAlignment="Left" Margin="978,676,0,0" VerticalAlignment="Top" Width="56" Click="teacher_btn_Click"/>
+        <Button x:Name="student_btn" Content="Student" HorizontalAlignment="Left" Margin="1087,676,0,0" VerticalAlignment="Top" Width="57" Click="student_btn_Click" Height="24"/>
 
         <!--not visible items for register-->
 

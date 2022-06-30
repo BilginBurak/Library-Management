@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -40,7 +41,11 @@ namespace Library_Management
             //    mainWindow.Show();
             //}
         }
-
+        private new void PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");   //this is only number for date, number etc. change previewtextinput in xaml
+            e.Handled = regex.IsMatch(e.Text);
+        }
         public void Window_Loaded(object sender, RoutedEventArgs e)
         {
            
@@ -101,7 +106,7 @@ namespace Library_Management
 
             if (dtUserSalt2.Rows.Count == 0 && dtUserSalt.Rows.Count == 0 && dtUserSalt3.Rows.Count == 0)
             {
-                MessageBox.Show("Invalid UserName or Email");
+                MessageBox.Show("Registered Username, Email or Phone not found");
                 return;
             }
 
@@ -126,10 +131,12 @@ namespace Library_Management
                 }
                 PublicMethods.loggedPhone = drwResult.Rows[0]["Phone"].ToString();
                 PublicMethods.loggedUserRank = drwResult.Rows[0]["UserRank"].ToString();
-                PublicMethods.loggedUserName = Dbaseconnection.selectTable("select username from tblUsers where Phone Like '%" + PublicMethods.loggedPhone + "%'").Rows[0][0].ToString();
+                PublicMethods.loggedUserName = Dbaseconnection.selectTable("select username from tblUsers where Phone='" + PublicMethods.loggedPhone + "'").Rows[0][0].ToString();
                 //PublicMethods.loggedUserId = Dbaseconnection.selectTable("select userId from tblUsers where Phone='%" + PublicMethods.loggedPhone + "%'").Rows[0][0].ToString();
             }
-        
+
+
+
 
             if (dtUserSalt.Rows.Count != 0)
             {
@@ -152,7 +159,7 @@ namespace Library_Management
                 }
                 PublicMethods.loggedEmail = drwResult.Rows[0]["Email"].ToString();
                 PublicMethods.loggedUserRank = drwResult.Rows[0]["UserRank"].ToString();
-                PublicMethods.loggedUserName = Dbaseconnection.selectTable("select username from tblUsers where Email Like '%" + PublicMethods.loggedEmail + "%'").Rows[0][0].ToString();
+                PublicMethods.loggedUserName = Dbaseconnection.selectTable("select username from tblUsers where Email= '" + PublicMethods.loggedEmail + "'").Rows[0][0].ToString();
             }
 
             if (dtUserSalt2.Rows.Count != 0)
@@ -181,6 +188,7 @@ namespace Library_Management
                
 
             }
+            
 
 
             if (PublicMethods.loggedUserRank == "0" || PublicMethods.loggedUserRank == "-1")
@@ -213,7 +221,7 @@ namespace Library_Management
 
             }
 
-            //clearlogged();
+            this.Close();
 
 
 
@@ -320,13 +328,13 @@ namespace Library_Management
 
                 //write the final step save in database,
 
-                string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit)
-  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit)";
+                string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread)
+  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread)";
 
-                List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit" };
+                List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread" };
 
 
-                List<object> lstValues = new List<object> { loginUserName_txtbx.Text, _txtbx_email.Text, srUserHashedPassword, userrank, irUserSalt, _txtbx_phone.Text, _txtbx_NameSurname.Text, escrowlimit };
+                List<object> lstValues = new List<object> { loginUserName_txtbx.Text, _txtbx_email.Text, srUserHashedPassword, userrank, irUserSalt, _txtbx_phone.Text, _txtbx_NameSurname.Text, escrowlimit, "0" };
 
                 var vrRegisterResult = Dbaseconnection.cmd_UpdateDeleteQuery(srInsertCmd, lstParameterNames, lstValues);
 
@@ -514,6 +522,7 @@ namespace Library_Management
         private void adminbbtn_Click(object sender, RoutedEventArgs e)
         {
             adminMainWindow adminMainWindow = new adminMainWindow();
+            //this.Close();
             adminMainWindow.Show();
         }
 

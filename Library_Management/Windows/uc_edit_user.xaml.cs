@@ -76,6 +76,7 @@ namespace Library_Management.Windows
             DataTable dtData = Dbaseconnection.selectTable(srQuery);
             DataView dvData = new DataView(dtData);
             datagrd_edituser.ItemsSource = dvData;
+            result_lbl.Content = "Total " + Convert.ToInt32(datagrd_edituser.Items.Count) + " result found";
 
         }
 

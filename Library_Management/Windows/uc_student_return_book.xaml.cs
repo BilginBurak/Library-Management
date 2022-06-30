@@ -81,10 +81,11 @@ namespace Library_Management.Windows
             {
                 DataRowView drv = datagrd_booklist.SelectedItem as DataRowView;
 
-                string escrowlimit, UserId, Username, NameSurname, Phone, srQuery = "", srQuery1, srQuery2, srQuery3;
+                string escrowlimit, UserId, Username, NameSurname, Phone, srQuery = "", srQuery1, srQuery2, srQuery3, srQuery4;
                 srQuery2 = $@" UPDATE tblBooks SET AmountofStock=(AmountofStock+1) WHERE BookId='" + drv["BookId"].ToString() + "'";
                 srQuery1 = $@" UPDATE tblUsers SET EscrowLimit=(escrowlimit+1) WHERE (Username='" + PublicMethods.loggedUserName + "' and userrank<1)";
                 srQuery3 = $@" select count (EscrowID) from tblNotVerified WHERE (EscrowID='" + drv["EscrowID"].ToString() + "')";
+                srQuery4 = $@" UPDATE tblUsers SET TotalRead=(TotalRead+1) WHERE Username='" +PublicMethods.loggedUserName + "'";
 
                 if (Convert.ToInt32(PublicMethods.loggedUserRank) < 1)
                 {
@@ -107,11 +108,12 @@ namespace Library_Management.Windows
 
                     MessageBox.Show("Book return is complete");
                     Dbaseconnection.updateDeleteInsert(srQuery2); Dbaseconnection.updateDeleteInsert(srQuery1);
-                    Dbaseconnection.updateDeleteInsert(srQuery);
-                } 
-                    
-                    
-                
+                    Dbaseconnection.updateDeleteInsert(srQuery); Dbaseconnection.updateDeleteInsert(srQuery4);
+
+                }
+
+
+
             }
 
                 

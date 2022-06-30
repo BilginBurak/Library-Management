@@ -19,9 +19,6 @@
     <Compile Update="UserController\ucAdminandTeacherSearch.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserController\ucBookList.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="UserController\ucStudentSearch.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\uc_clear_user.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\uc_deleted_book.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\uc_edit_book.xaml.cs">
@@ -90,9 +90,6 @@
     <Page Update="UserController\ucAdminandTeacherSearch.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserController\ucBookList.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="UserController\ucStudentSearch.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -106,6 +103,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\uc_clear_user.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\uc_deleted_book.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\uc_edit_book.xaml">

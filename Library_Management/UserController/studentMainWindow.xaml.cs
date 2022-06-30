@@ -31,8 +31,7 @@ namespace Library_Management
             Random randomforactive = new();
             int rndact = randomforactive.Next(10, 80);
             actLbl.Content = "Number of active users in the system: " + rndact.ToString()+ "";
-            Dbaseconnection.DbConTest();
-            Dbopening.Content = Dbaseconnection.DbConState;
+            
             lblforteacher.Content = PublicMethods.loggedUserName;
             if (PublicMethods.loggedUserRank == "-1") 
             {
@@ -56,8 +55,7 @@ namespace Library_Management
             Random randomforactive = new();
             int rndact = randomforactive.Next(10, 80);
             actLbl.Content = rndact.ToString();
-            Dbaseconnection.DbConTest();
-            Dbopening.Content = Dbaseconnection.DbConState;
+            
             refreshifo();
 
 
@@ -177,7 +175,9 @@ namespace Library_Management
             MessageBoxResult result = MessageBox.Show("Log Out?", "", MessageBoxButton.OKCancel, MessageBoxImage.Question);
             if (result == MessageBoxResult.OK)
             {
+                LoginWindow loginWindow = new LoginWindow();
                 this.Close();
+                loginWindow.Show();
             }
         }
 

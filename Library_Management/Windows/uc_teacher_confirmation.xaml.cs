@@ -36,7 +36,7 @@ namespace Library_Management.Windows
             DataTable dtData = Dbaseconnection.selectTable(srQuery);
             DataView dvData = new DataView(dtData);
             datagrd_teacherconfirm.ItemsSource = dvData;
-
+            result_lbl.Content = "Total " + Convert.ToInt32(datagrd_teacherconfirm.Items.Count) + " result found";
         }
 
         private void clearall()

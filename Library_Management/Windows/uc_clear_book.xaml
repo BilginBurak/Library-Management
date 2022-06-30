@@ -13,19 +13,21 @@
         <Label x:Name="lbl_textbx" Content="Search Book Name" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" Width="214" Padding="17,0,5,0" VerticalContentAlignment="Center" Height="30" IsEnabled="False" IsHitTestVisible="False"/>
 
         <DataGrid x:Name="datagrd_clearBook" d:ItemsSource="{d:SampleData ItemCount=5}" Width="689" HorizontalAlignment="Left" VerticalAlignment="Top" Height="466" Margin="25,84,0,0" CanUserAddRows="False"  MouseUp="datagrd_teacherconfirm_MouseUp" IsReadOnly="True" FontSize="11.7"/>
-        <TextBox x:Name="booktitle_txtbx" HorizontalAlignment="Left" Margin="761,84,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" />
-        <TextBox x:Name="author_txtbx" HorizontalAlignment="Left" Margin="761,173,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
-        <TextBox x:Name="genre_txtbx" HorizontalAlignment="Left" Margin="761,263,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
-        <TextBox x:Name="publisher_txtbx" HorizontalAlignment="Left" Margin="761,352,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
-        <TextBox x:Name="stock_txtbx" HorizontalAlignment="Left" Margin="761,441,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="booktitle_txtbx" HorizontalAlignment="Left" Margin="761,48,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="36" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" />
+        <TextBox x:Name="author_txtbx" HorizontalAlignment="Left" Margin="761,128,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="37" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="genre_txtbx" HorizontalAlignment="Left" Margin="761,210,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="36" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="publisher_txtbx" HorizontalAlignment="Left" Margin="761,290,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="37" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
+        <TextBox x:Name="stock_txtbx" HorizontalAlignment="Left" Margin="761,371,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="36" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True"/>
 
-        <Label Content="Book Title" HorizontalAlignment="Left" Margin="761,59,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
-        <Label Content="Author" HorizontalAlignment="Left" Margin="761,148,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
-        <Label Content="Genre" HorizontalAlignment="Left" Margin="761,238,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
-        <Label Content="Publisher" HorizontalAlignment="Left" Margin="761,327,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
-        <Label Content="Amount of Stock" HorizontalAlignment="Left" Margin="761,416,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
+        <Label Content="Book Title" HorizontalAlignment="Left" Margin="761,25,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="23"/>
+        <Label Content="Author" HorizontalAlignment="Left" Margin="761,106,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="22"/>
+        <Label Content="Genre" HorizontalAlignment="Left" Margin="761,187,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="23"/>
+        <Label Content="Publisher" HorizontalAlignment="Left" Margin="761,268,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="22"/>
+        <Label Content="Amount of Stock" HorizontalAlignment="Left" Margin="761,348,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="23"/>
         <Button x:Name="btnEdit" Content="Clear Book" HorizontalAlignment="Left" Margin="868,510,0,0" VerticalAlignment="Top" Height="40" Width="107" Click="btnEdit_Click" />
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="25,550,0,0" VerticalAlignment="Top" Width="305" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5"/>
+        <TextBox x:Name="comment_txtbx" HorizontalAlignment="Left" Margin="761,452,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="214" Height="36" VerticalContentAlignment="Center" Padding="15,0,0,0"/>
+        <Label Content="Deletion Description" HorizontalAlignment="Left" Margin="761,429,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="23"/>
 
     </Grid>
 </UserControl>

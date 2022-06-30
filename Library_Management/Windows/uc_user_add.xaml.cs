@@ -74,15 +74,15 @@ namespace Library_Management.Windows
 
             string srUserHashedPassword = PublicMethods.returnUserHashedPw(passwd_pass.Password.ToString(), irUserSalt.ToString());
 
-            //write the final step save in database,
+           
+            string escrowlimit = Dbaseconnection.selectTable("select TotalBook from tblSettings").Rows[0][0].ToString();
+            string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread)
+  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread)";
 
-            string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname)
-  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname)";
-
-            List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname" };
+            List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread" };
 
 
-            List<object> lstValues = new List<object> { username_txtbx.Text, email_txtbx.Text, srUserHashedPassword, userrank, irUserSalt, phone_txtbx.Text, namesurname_txtbx.Text };
+            List<object> lstValues = new List<object> { username_txtbx.Text, email_txtbx.Text, srUserHashedPassword, userrank, irUserSalt, phone_txtbx.Text, namesurname_txtbx.Text, escrowlimit, "0" };
 
             var vrRegisterResult = Dbaseconnection.cmd_UpdateDeleteQuery(srInsertCmd, lstParameterNames, lstValues);
 

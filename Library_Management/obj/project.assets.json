@@ -3297,11 +3297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
+      "projectUniqueName": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
       "projectName": "Library_Management",
-      "projectPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\Library_Management.csproj",
+      "projectPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\Library_Management.csproj",
       "packagesPath": "C:\\Users\\Burak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library Management\\Library_Management\\obj\\",
+      "outputPath": "C:\\Users\\Burak\\Desktop\\Kutuphane\\Library_Management\\Library_Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Burak\\AppData\\Roaming\\NuGet\\NuGet.Config",

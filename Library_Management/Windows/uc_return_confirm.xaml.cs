@@ -110,13 +110,11 @@ namespace Library_Management.Windows
 
                 DataRowView drv = datagrd_duedatebook.SelectedItem as DataRowView;
 
-                string srQuery0, srQuery1,srQuery2 = "", srQuery3;
-                srQuery0 = $@" UPDATE tblUsers SET escrowlimit=(escrowlimit+1) WHERE (UserId='" + drv["UserId"].ToString() + "' and userrank<1)";
+                string srQuery0, srQuery1,srQuery2 = "", srQuery3, srQuery4;
+                srQuery0 = $@" UPDATE tblUsers SET escrowlimit=(escrowlimit+1),TotalRead=(TotalRead+1) WHERE (UserId='" + drv["UserId"].ToString() + "' and userrank<1)";
                 srQuery1 = $@" UPDATE tblBooks SET AmountofStock=(AmountofStock+1) WHERE BookId='" + drv["BookId"].ToString() + "'";
-                srQuery2 = $@" delete from tblescrowbooks where (EscrowID= '" + drv["EscrowID"].ToString() + "')";
-                
+                srQuery2 = $@" delete from tblescrowbooks where (EscrowID= '" + drv["EscrowID"].ToString() + "')"; 
                 srQuery3 = $@" delete from tblNotVerified where (EscrowID= '" + drv["EscrowID"].ToString() + "')";
-
 
                 Dbaseconnection.updateDeleteInsert(srQuery0); Dbaseconnection.updateDeleteInsert(srQuery1);
                 Dbaseconnection.updateDeleteInsert(srQuery2); Dbaseconnection.updateDeleteInsert(srQuery3);

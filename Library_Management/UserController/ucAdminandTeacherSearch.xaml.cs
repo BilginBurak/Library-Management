@@ -191,35 +191,7 @@ namespace Library_Management.UserController
 
         }
 
-        public static bool fillGridfromDatabase(DataGrid grid)
-        {
-            sbyte checkdatagrid = 0;
-            //SqliteConnection sQLiteConnectionfordataGrd = new SQLiteConnection(Dbaseconnection.DbAdress);
-            SQLiteConnection sQLiteConnection = new SQLiteConnection(Dbaseconnection.DbAdress);
-            SQLiteCommand sQLiteCommand = new SQLiteCommand("select * from tbl_BookList", sQLiteConnection);
-            try
-            {
-                SQLiteDataAdapter sqliteAdaptor = new SQLiteDataAdapter(sQLiteCommand);
-                DataTable dataTableindatabase = new DataTable();
-                sqliteAdaptor.Fill(dataTableindatabase);
-                grid.ItemsSource = null;
-                grid.ItemsSource = dataTableindatabase.DefaultView;
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
-
-            finally
-            {
-                sQLiteConnection.Dispose();
-
-            }
-            if (checkdatagrid > 0)
-                return true;
-            else return false;
-
-        }
+  
 
 
 

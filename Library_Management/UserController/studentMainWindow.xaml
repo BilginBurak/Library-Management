@@ -69,7 +69,6 @@
 
 
                     <Grid x:Name="welcomegrd" Background="#FFE5E5E5" Margin="15,0,0,0"/>
-                    <!--<Label Content="Content goes here..." />-->
                 </TabItem>
                 <!--<TabItem Header="Book Management" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-24" Foreground="#FFD48B07" FontSize="16" >
                     -->
@@ -110,7 +109,6 @@
                         <DropShadowEffect/>
                     </TabItem.Effect>
                     -->
-                <!--<Label Content="Content goes here..." />-->
                 <!--
                 </TabItem>
                 <TabItem Header="Escrow Managemenet" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-32" Foreground="#FFD48B07" FontSize="15" >
@@ -132,7 +130,6 @@
                         <DropShadowEffect/>
                     </TabItem.Effect>
                     -->
-                <!--<Label Content="Content goes here..." />-->
                 <!--
                 </TabItem>-->
                 <TabItem Header="My Books" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-24" Foreground="#FFD48B07" FontSize="15" >
@@ -156,24 +153,25 @@
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
-                    <!--<Label Content="Content goes here..." />-->
                 </TabItem>
-                <TabItem Header="Details222" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-32" Foreground="#FFD48B07" FontSize="16" >
-                    <Grid Background="#FF85ABC8" Margin="15,0,0,0"/>
-                    <TabItem.Effect>
-                        <DropShadowEffect/>
-                    </TabItem.Effect>
-                    <!--<Label Content="Content goes here..." />-->
-                </TabItem>
-
 
                 <TabItem PreviewMouseDown="tab_logout_MouseLeftButtonDown" Header="LOGOUT" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-40" Foreground="#FFD48B07" FontSize="16" >
 
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
-                    <!--<Label Content="Content goes here..." />-->
                 </TabItem>
+                
+                <!--<TabItem Header="Details222" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-32" Foreground="#FFD48B07" FontSize="16" >
+                    <Grid Background="#FF85ABC8" Margin="15,0,0,0"/>
+                    <TabItem.Effect>
+                        <DropShadowEffect/>
+                    </TabItem.Effect>
+                    --><!--<Label Content="Content goes here..." />--><!--
+                </TabItem>-->
+
+
+                
             </TabControl>
 
         </Grid>

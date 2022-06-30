@@ -23,6 +23,7 @@
         <Label Content="User Level" HorizontalAlignment="Left" Margin="761,416,0,0" VerticalAlignment="Top" Width="214" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="25"/>
         <ComboBox x:Name="cmbbx_userrank" HorizontalAlignment="Left" Margin="761,441,0,0" VerticalAlignment="Top" Width="214" Height="40" Padding="15,3,5,3" VerticalContentAlignment="Center" IsReadOnly="True" IsHitTestVisible="False"/>
         <Label x:Name="lbl_textbx" Content="Search for Anything" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" Width="214" Padding="17,0,5,0" VerticalContentAlignment="Center" Height="30" IsEnabled="False" IsHitTestVisible="False"/>
+        <Label x:Name="result_lbl" Content="Label" HorizontalAlignment="Left" Margin="25,550,0,0" VerticalAlignment="Top" Width="231" Padding="15,5,5,5" VerticalContentAlignment="Center"/>
 
 
 

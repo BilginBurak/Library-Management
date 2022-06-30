@@ -36,8 +36,7 @@ namespace Library_Management
             Random randomforactive = new();
             int rndact = randomforactive.Next(10, 80);
             actLbl.Content = rndact.ToString();
-            Dbaseconnection.DbConTest();
-            Dbopening.Content = Dbaseconnection.DbConState;
+        
 
             refreshifo();
 
@@ -54,7 +53,6 @@ namespace Library_Management
 
         private void bookListBtn_Click(object sender, RoutedEventArgs e)
         {
-            CallUserClss.AddUserClass(ContentGrd, new UserController.ucBookList());
             bookListBtn.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
             userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
             escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
@@ -194,13 +192,20 @@ namespace Library_Management
             MessageBoxResult result = MessageBox.Show("Log Out?", "", MessageBoxButton.OKCancel, MessageBoxImage.Question);
             if (result == MessageBoxResult.OK)
             {
+                LoginWindow loginWindow = new LoginWindow();
                 this.Close();
+                loginWindow.Show();
             }
         }
 
         private void tab_returnconf_Loaded(object sender, RoutedEventArgs e)
         {
             AddUserClassw(returnconfgrd, new Library_Management.Windows.uc_return_confirm()); refreshifo();
+
+        }
+        private void tab_deletedbook_Loaded(object sender, RoutedEventArgs e)
+        {
+            AddUserClassw(deletedbooksgrd, new Library_Management.Windows.uc_deleted_book()); refreshifo();
 
         }
     }

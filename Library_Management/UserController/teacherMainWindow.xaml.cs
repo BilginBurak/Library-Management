@@ -26,87 +26,12 @@ namespace Library_Management
             InitializeComponent();
         }
 
-        //private void Teacher_control_panel_Loaded(object sender, RoutedEventArgs e)
-        //{
-        //    Random randomforactive = new();
-        //    int rndact = randomforactive.Next(10, 80);
-        //    actLbl.Content = rndact.ToString();
-        //    Dbaseconnection.DbConTest();
-        //    Dbopening.Content = Dbaseconnection.DbConState;
-        //    lblforteacher.Content = PublicMethods.loggedUserName;
-
-        //    int totalbook = Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
-        //    int borrowedbooksnumber = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT(AmountofStock) from tblBooks where AmountofStock LIKE '0%'").Rows[0][0].ToString());
-        //    brwLbl.Content = borrowedbooksnumber;
-        //    ttlLbl1.Content = totalbook;
-
-        //}
-
-
-
-        //private void bookListBtn_Click(object sender, RoutedEventArgs e)
-        //{
-        //    CallUserClss.AddUserClass(ContentGrd, new UserController.ucBookList());
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-        //    userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-
-        //}
-
-        //private void userManagementBtninMain_Click(object sender, RoutedEventArgs e)
-        //{
-        //    userManagementBtninMain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-
-        //}
-
-        //private void escrowManagementBtninMain_Click(object sender, RoutedEventArgs e)
-        //{
-        //    escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //}
-
-        //private void extrabtn1inmain_Click(object sender, RoutedEventArgs e)
-        //{
-        //    extrabtn1inmain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn2inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //}
-
-        //private void extrabtn2inmain_Click(object sender, RoutedEventArgs e)
-        //{
-        //    extrabtn2inmain.Background = new SolidColorBrush(Color.FromRgb(38, 126, 166));
-        //    bookListBtn.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    userManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    escrowManagementBtninMain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-        //    extrabtn1inmain.Background = new SolidColorBrush(Color.FromArgb(50, 144, 193, 190));
-
-        //}
-
-        //private void searchicondckpnl_MouseUp(object sender, MouseButtonEventArgs e)
-        //{
-        //    SearchWindow searchWindow = new SearchWindow();
-        //    searchWindow.ShowDialog();
-        //}
-
         private void Teacher_control_panel_Loaded(object sender, RoutedEventArgs e)
         {
             Random randomforactive = new();
             int rndact = randomforactive.Next(10, 80);
             actLbl.Content = rndact.ToString();
-            Dbaseconnection.DbConTest();
-            Dbopening.Content = Dbaseconnection.DbConState;
+           
             refreshifo();
            
 
@@ -227,7 +152,9 @@ namespace Library_Management
             MessageBoxResult result = MessageBox.Show("Log Out?", "", MessageBoxButton.OKCancel, MessageBoxImage.Question);
             if (result == MessageBoxResult.OK)
             {
+                LoginWindow loginWindow = new LoginWindow();
                 this.Close();
+                loginWindow.Show();
             }
         }
     }

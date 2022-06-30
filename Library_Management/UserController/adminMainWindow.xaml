@@ -172,7 +172,9 @@
                             <TabItem x:Name="tab_delete_book" Header="Delete Book" Width="200" Height="50" Loaded="tab_delete_book_Loaded">
                                 <Grid x:Name="clearbookgrd" Background="#FFE5E5E5" />
                             </TabItem>
-
+                            <TabItem x:Name="tab_deletedbook" Header="Deleted Book" Width="200" Height="50" Loaded="tab_deletedbook_Loaded">
+                                <Grid x:Name="deletedbooksgrd" Background="#FFE5E5E5" />
+                            </TabItem>
                         </TabControl>
                     </Grid>
 

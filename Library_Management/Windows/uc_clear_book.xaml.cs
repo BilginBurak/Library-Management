@@ -102,8 +102,14 @@ namespace Library_Management.Windows
 
                 if (result == MessageBoxResult.Yes)
                 {
-
+                    string srQuery0= $@" insert into tblDeletedBooks ( BookID, AmountofStock, BookName, Author, Genre, Publisher, PageNumber, PublishDate, Language, ISBN) select * FROM tblBooks WHERE (BookID= '" + drv["BookID"].ToString() + "')";
+                    //srQuery = $@" insert into tblNotVerified select * from tblescrowbooks where (escrowId= '" + drv["EscrowID"].ToString() + "')";
+                    string srQuery1 = $@" update tbldeletedbooks set comment='"+comment_txtbx.Text+ "', DeletionDate=GETDATE() WHERE BookID='" + drv["BookID"].ToString() + "'";
                     string srQuery2 = $@" DELETE FROM tblBooks WHERE BookID='" + drv["BookID"].ToString() + "'";
+                    
+                    Dbaseconnection.updateDeleteInsert(srQuery0);
+                    Dbaseconnection.updateDeleteInsert(srQuery1);
+
                     Dbaseconnection.updateDeleteInsert(srQuery2);
 
                     txtbx_search.Text = "";
@@ -112,6 +118,7 @@ namespace Library_Management.Windows
                     genre_txtbx.Text = "";
                     publisher_txtbx.Text = "";
                     stock_txtbx.Text = "";
+                    comment_txtbx.Text = "";
                 }
                 refreshdatagrid();
 

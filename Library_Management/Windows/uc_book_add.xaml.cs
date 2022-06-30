@@ -84,7 +84,7 @@ namespace Library_Management.Windows
 
         private new void PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            Regex regex = new Regex("[^0-9_-]+");   //this is only number for date, number etc.
+            Regex regex = new Regex("[^0-9_-]+");   //this is only number for date, number etc. change previewtextinput in xaml
             e.Handled = regex.IsMatch(e.Text);
         }
 
