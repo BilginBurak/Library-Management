@@ -22,6 +22,7 @@
     <None Remove="UserController\find_book.png" />
     <None Remove="UserController\search_icon-forsearch_screen.png" />
     <None Remove="UserController\SplashScreen.png" />
+    <None Remove="UserController\teacher.png" />
     <None Remove="username_login.png" />
     <None Remove="username_login1.png" />
     <None Remove="user_icon.png" />
@@ -54,6 +55,7 @@
     <Resource Include="UserController\find_book.png" />
     <Resource Include="UserController\search_icon-forsearch_screen.png" />
     <Resource Include="UserController\SplashScreen.png" />
+    <Resource Include="UserController\teacher.png" />
     <Resource Include="username_login.png" />
     <Resource Include="username_login1.png" />
     <Resource Include="user_icon.png" />

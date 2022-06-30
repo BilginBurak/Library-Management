@@ -15,9 +15,9 @@
         <DataGrid x:Name="datagrd_book" d:ItemsSource="{d:SampleData ItemCount=5}" Width="935" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Margin="35,45,0,0" CanUserAddRows="False" MouseUp="datagrd_book_MouseUp" IsReadOnly="True" FontSize="11.7"/>
         <DataGrid x:Name="datagrd_user" d:ItemsSource="{d:SampleData ItemCount=5}" Width="935" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Margin="35,305,0,0" CanUserAddRows="False"  MouseUp="datagrd_user_MouseUp" IsReadOnly="True" FontSize="11.7"/>
 
-        <TextBox x:Name="name_surname_txtbx" HorizontalAlignment="Left" Margin="403,520,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" FontSize="11" />
+        <TextBox x:Name="name_surname_txtbx" HorizontalAlignment="Left" Margin="403,520,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" FontSize="11" HorizontalContentAlignment="Center" />
 
-        <TextBox x:Name="booktitle_txtbx1" HorizontalAlignment="Left" Margin="98,520,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" FontSize="11" />
+        <TextBox x:Name="booktitle_txtbx1" HorizontalAlignment="Left" Margin="98,520,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="210" Height="40" VerticalContentAlignment="Center" Padding="15,0,0,0" IsReadOnly="True" FontSize="11" HorizontalContentAlignment="Center" />
         <Label x:Name="total_lbl2" Content="Total..." HorizontalAlignment="Left" Margin="690,270,0,0" VerticalAlignment="Top" Width="280" Padding="15,0,5,0" VerticalContentAlignment="Center" Height="30" HorizontalContentAlignment="Right"/>
 
         <Label x:Name="total_lbl" Content="Label" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="280" Height="30" VerticalContentAlignment="Center" Padding="15,5,5,5" HorizontalContentAlignment="Right"/>

@@ -20,7 +20,7 @@
             </DataGrid.Resources>
 
         </DataGrid>
-        <DataGrid x:Name="dtgrdtotalread" d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,364,0,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Horizontal" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="220" FlowDirection="LeftToRight" Visibility="Visible" Height="265" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,0">
+        <DataGrid x:Name="dtgrdtotalread" d:ItemsSource="{d:SampleData ItemCount=30}" Margin="30,72,0,0" HeadersVisibility="Column" CanUserAddRows="False" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" RowBackground="#00000000" SelectionMode="Single" SelectionUnit="Cell" CanUserDeleteRows="False" GridLinesVisibility="Horizontal" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" RowDetailsVisibilityMode="Collapsed" VerticalContentAlignment="Bottom" AutomationProperties.IsColumnHeader="True" Width="220" FlowDirection="LeftToRight" Visibility="Visible" Height="557" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,0">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Transparent" />
@@ -28,5 +28,10 @@
                 </Style>
             </DataGrid.Resources>
         </DataGrid>
+        <Label Content="-Top Readers Corner-" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="220" FontSize="20"/>
+        <Label x:Name="lbl_totaluser" Content="Label" HorizontalAlignment="Left" Margin="558,30,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label x:Name="lbl_activeuser" Content="Label" HorizontalAlignment="Left" Margin="558,82,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label x:Name="lbl_totalbook" Content="Label" HorizontalAlignment="Left" Margin="558,133,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label x:Name="lbl_totalborrow" Content="Label" HorizontalAlignment="Left" Margin="558,184,0,0" VerticalAlignment="Top" Width="419" Height="40" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
     </Grid>
 </UserControl>

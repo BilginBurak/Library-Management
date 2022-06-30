@@ -42,8 +42,6 @@ namespace Library_Management
         private void refreshifo()
         {
             int totalbook = Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
-            int borrowedbooksnumber = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT (userıd) from tblEscrowbooks").Rows[0][0].ToString());
-            brwLbl.Content = borrowedbooksnumber;
             ttlLbl1.Content = totalbook;
 
         }
@@ -156,6 +154,19 @@ namespace Library_Management
                 this.Close();
                 loginWindow.Show();
             }
+        }
+
+        private void tab_deletedbook_Loaded(object sender, RoutedEventArgs e)
+        {
+            AddUserClassw(deletedbooksgrd, new Library_Management.Windows.uc_deleted_book()); refreshifo();
+        }
+
+       
+
+        private void tab_welcome_Loaded(object sender, RoutedEventArgs e)
+        {
+            AddUserClassw(welcomegrd, new Library_Management.Windows.uc_welcome_admin()); refreshifo();
+
         }
     }
 }

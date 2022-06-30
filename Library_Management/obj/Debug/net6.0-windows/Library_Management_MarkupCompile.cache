@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\App.xaml
-25114086218
+26-943976656
 
-29312134317
+30-1342927570
 218-1835326135
-UserController\adminMainWindow.xaml;UserController\LoginWindow.xaml;UserController\SearchWindow.xaml;UserController\studentMainWindow.xaml;UserController\teacherMainWindow.xaml;UserController\ucAdminandTeacherSearch.xaml;UserController\ucStudentSearch.xaml;Windows\uc_book_add.xaml;Windows\uc_borrow_book.xaml;Windows\uc_clear_book.xaml;Windows\uc_clear_user.xaml;Windows\uc_deleted_book.xaml;Windows\uc_edit_book.xaml;Windows\uc_edit_user.xaml;Windows\uc_lend_book.xaml;Windows\uc_myescrow_books.xaml;Windows\uc_overdue_books.xaml;Windows\uc_return_book.xaml;Windows\uc_return_confirm.xaml;Windows\uc_settings.xaml;Windows\uc_student_outofdate_book.xaml;Windows\uc_student_return_book.xaml;Windows\uc_teacher_confirmation.xaml;Windows\uc_user_add.xaml;Windows\uc_welcome_student.xaml;
+UserController\adminMainWindow.xaml;UserController\LoginWindow.xaml;UserController\SearchWindow.xaml;UserController\studentMainWindow.xaml;UserController\teacherMainWindow.xaml;UserController\ucAdminandTeacherSearch.xaml;UserController\ucStudentSearch.xaml;Windows\uc_book_add.xaml;Windows\uc_borrow_book.xaml;Windows\uc_clear_book.xaml;Windows\uc_clear_user.xaml;Windows\uc_deleted_book.xaml;Windows\uc_edit_book.xaml;Windows\uc_edit_user.xaml;Windows\uc_lend_book.xaml;Windows\uc_myescrow_books.xaml;Windows\uc_overdue_books.xaml;Windows\uc_return_book.xaml;Windows\uc_return_confirm.xaml;Windows\uc_settings.xaml;Windows\uc_student_outofdate_book.xaml;Windows\uc_student_return_book.xaml;Windows\uc_teacher_confirmation.xaml;Windows\uc_user_add.xaml;Windows\uc_welcome_admin.xaml;Windows\uc_welcome_student.xaml;
 splashscreen1.png
 False
 

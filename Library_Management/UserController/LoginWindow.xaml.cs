@@ -85,21 +85,24 @@ namespace Library_Management
         {
 
 
+            string srSalt1 = "select PwSalt1 from tblUsers where Username=@Username";
 
-            string srSalt = "select PwSalt from tblUsers where Email=@Email";
+            string srSalt = "select PwSalt,pwsalt1 from tblUsers where Email=@Email";
             List<string> lstSaltParams = new List<string> { "@Email" };
+            List<string> lstSaltParams1 = new List<string> { "@username" };
 
             DataTable dtUserSalt = Dbaseconnection.cmd_SelectQuery(srSalt, lstSaltParams, new List<object> { loginUserName_txtbx.Text });
 
+            DataTable dtUserSalt1 = Dbaseconnection.cmd_SelectQuery(srSalt1, lstSaltParams1, new List<object> { loginUserName_txtbx.Text });
 
-
+            //string srSaltofUser1 = dtUserSalt1.Rows[0]["PwSalt1"].ToString();
 
             string srSalt2 = "select PwSalt from tblUsers where UserName=@UserName";
             List<string> lstSaltParams2 = new List<string> { "@UserName" };
 
             DataTable dtUserSalt2 = Dbaseconnection.cmd_SelectQuery(srSalt2, lstSaltParams2, new List<object> { loginUserName_txtbx.Text });
 
-            string srSalt3 = "select PwSalt from tblUsers where Phone=@Phone";
+            string srSalt3 = "select PwSalt,PwSalt1 from tblUsers where Phone=@Phone";
             List<string> lstSaltParams3 = new List<string> { "@Phone" };
 
             DataTable dtUserSalt3 = Dbaseconnection.cmd_SelectQuery(srSalt3, lstSaltParams3, new List<object> { loginUserName_txtbx.Text });
@@ -113,12 +116,12 @@ namespace Library_Management
             if (dtUserSalt3.Rows.Count != 0)
             {
                 string srSaltofUser = dtUserSalt3.Rows[0]["PwSalt"].ToString();
-
+                string srSaltofUser1 = dtUserSalt3.Rows[0]["PwSalt1"].ToString();
                 List<string> lstLoginParams3 = new List<string> { "@Phone", "@Password" };
 
                 string srLoginCommand = "select UserRank,Phone from tblUsers where Phone=@Phone and Password=@Password";
 
-                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser);
+                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser, srSaltofUser1);
 
                 List<object> lstLoginValues = new List<object> { loginUserName_txtbx.Text, srUserHashedPw };
 
@@ -141,12 +144,12 @@ namespace Library_Management
             if (dtUserSalt.Rows.Count != 0)
             {
                 string srSaltofUser = dtUserSalt.Rows[0]["PwSalt"].ToString();
+                string srSaltofUser1 = dtUserSalt.Rows[0]["PwSalt1"].ToString();
 
                 List<string> lstLoginParams = new List<string> { "@Email", "@Password" };
 
                 string srLoginCommand = "select UserRank,Email from tblUsers where Email=@Email and Password=@Password";
-
-                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser);
+                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser, srSaltofUser1);
 
                 List<object> lstLoginValues = new List<object> { loginUserName_txtbx.Text, srUserHashedPw };
 
@@ -165,12 +168,12 @@ namespace Library_Management
             if (dtUserSalt2.Rows.Count != 0)
             {
                 string srSaltofUser = dtUserSalt2.Rows[0]["PwSalt"].ToString();
-
+                string srSaltofUser1 = dtUserSalt1.Rows[0]["PwSalt1"].ToString();
                 List<string> lstLoginParams = new List<string> { "@UserName", "@Password" };
 
                 string srLoginCommand = "select UserRank,UserName from tblUsers where UserName=@UserName and Password=@Password";
 
-                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser);
+                string srUserHashedPw = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), srSaltofUser, srSaltofUser1);
 
                 List<object> lstLoginValues = new List<object> { loginUserName_txtbx.Text, srUserHashedPw };
 
@@ -323,18 +326,19 @@ namespace Library_Management
                 else if (cmbbx_forrankchoose.SelectedIndex == 1) userrank = -1;
 
                 int irUserSalt = new Random().Next();
+                int irUserSalt1 = new Random().Next();
 
-                string srUserHashedPassword = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), irUserSalt.ToString());
+                string srUserHashedPassword = PublicMethods.returnUserHashedPw(loginPasswd_pswdbx.Password.ToString(), irUserSalt.ToString(), irUserSalt1.ToString());
 
                 //write the final step save in database,
 
-                string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread)
-  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread)";
+                string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread, PwSalt1)
+  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread, @PwSalt1)";
 
-                List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread" };
+                List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread", "@PwSalt1" };
 
 
-                List<object> lstValues = new List<object> { loginUserName_txtbx.Text, _txtbx_email.Text, srUserHashedPassword, userrank, irUserSalt, _txtbx_phone.Text, _txtbx_NameSurname.Text, escrowlimit, "0" };
+                List<object> lstValues = new List<object> { loginUserName_txtbx.Text, _txtbx_email.Text, srUserHashedPassword, userrank, irUserSalt, _txtbx_phone.Text, _txtbx_NameSurname.Text, escrowlimit, "0", irUserSalt1 };
 
                 var vrRegisterResult = Dbaseconnection.cmd_UpdateDeleteQuery(srInsertCmd, lstParameterNames, lstValues);
 

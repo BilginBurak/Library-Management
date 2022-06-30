@@ -145,9 +145,9 @@ namespace Library_Management.Classes
 
 
 
-        public static string returnUserHashedPw(string srPwRaw, string srUserSalt)
+        public static string returnUserHashedPw(string srPwRaw, string srUserSalt, string srUserSalt1)
         {
-            return ComputeSha256Hash(srPwRaw + srUserSalt);
+            return ComputeSha256Hash(srUserSalt1 + srPwRaw + srUserSalt);
         }
 
         private static string ComputeSha256Hash(string rawData)

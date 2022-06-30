@@ -42,7 +42,6 @@ namespace Library_Management
         
             int totalbook = Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
             int borrowedbooksnumber = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT(AmountofStock) from tblBooks where AmountofStock LIKE '0%'").Rows[0][0].ToString());
-            brwLbl.Content ="Total Borrowed Books in Library:  " + borrowedbooksnumber+ "";
             ttlLbl1.Content = "Total Books in Library:  " + totalbook+ "";
             int outdatebook = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT (escrowıd) from tblEscrowbooks where (username= '" + PublicMethods.loggedUserName + "' and deadline<GETDATE())").Rows[0][0].ToString()); 
             if (outdatebook > 0) MessageBox.Show("You have expired books, please return the books as soon as possible!", "Overdue Book Alert", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -66,8 +65,6 @@ namespace Library_Management
         private void refreshifo()
         {
             int totalbook = Convert.ToInt32(Dbaseconnection.selectTable("select Sum(AmountofStock) from tblBooks").Rows[0][0].ToString());
-            int borrowedbooksnumber = Convert.ToInt32(Dbaseconnection.selectTable("select COUNT (userıd) from tblEscrowbooks").Rows[0][0].ToString());
-            brwLbl.Content = "Total Borrowed Books in Library: " + borrowedbooksnumber + "";
             ttlLbl1.Content = "Total Books in Library: " + totalbook + "";
 
         }

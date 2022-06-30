@@ -223,3 +223,5 @@ C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug
 C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_welcome_student.baml
 C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_deleted_book.g.cs
 C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_deleted_book.baml
+C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_welcome_admin.g.cs
+C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\obj\Debug\net6.0-windows\Windows\uc_welcome_admin.baml

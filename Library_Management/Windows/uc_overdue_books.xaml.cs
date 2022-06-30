@@ -118,13 +118,13 @@ namespace Library_Management.Windows
                 string srQuery2;
                 if (chckbx_contact.IsChecked == true)
                 {
-                    srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=0  WHERE UserId='" + drv["UserId"].ToString() + "'";
+                    srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=0  WHERE (UserId='" + drv["UserId"].ToString() + "' and BookId='" + drv["BookId"].ToString()+"')";
                     
                 }
-                else srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=1  WHERE UserId='" + drv["UserId"].ToString() + "'";
-                 
-                    
-                
+                else srQuery2 = $@" UPDATE tblEscrowBooks SET Contact=1  WHERE (UserId='" + drv["UserId"].ToString() + "' and BookId='" + drv["BookId"].ToString() + "')";
+
+
+
                 Dbaseconnection.updateDeleteInsert(srQuery2);
                 cleartxtboks();
                 btnEdit.Content = "Contact";

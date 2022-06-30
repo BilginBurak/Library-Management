@@ -44,15 +44,13 @@
         <StackPanel Margin="0,0,1026,0"/>
         <Border Background="#FF426FB7" Grid.Row="1" HorizontalAlignment="Left" Width="179" Height="659" VerticalAlignment="Center"/>
         <StackPanel/>
-        
-        
-         <Image Margin="1080,10,10,10" Source="/teacher.png" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
+        <Image Margin="1070,-8,0,0" Source="/UserController/teacher.png" Height="125" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="Total Number of Books: " HorizontalAlignment="Left" Margin="226,36,0,0" VerticalAlignment="Top" Width="157" FontSize="14"/>
         <Label Content="Number of Active Users:" HorizontalAlignment="Left" Margin="226,74,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Number of Borrowed Books: " HorizontalAlignment="Left" Margin="474,34,0,0" VerticalAlignment="Top" Width="185" FontSize="14"/>
-        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="376,38,0,0" VerticalAlignment="Top" Width="93" FontSize="14" Padding="5,5,0,5"/>
+        <Label x:Name="ttlLbl1" Content="total_book" HorizontalAlignment="Left" Margin="376,36,0,0" VerticalAlignment="Top" Width="93" FontSize="14" Padding="5,5,0,5"/>
         <Label x:Name="actLbl" Content="" HorizontalAlignment="Left" Margin="382,74,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
-        <Label x:Name="brwLbl" Content="borrowed" HorizontalAlignment="Left" Margin="654,34,0,0" VerticalAlignment="Top" Width="89" FontSize="14"/>
 
 
         <Grid x:Name="ContentGrd" Grid.Row="1" Margin="179,0,0,0" Background="#4C763CE0" UseLayoutRounding="False">
@@ -61,68 +59,53 @@
                 <TabControl.Resources>
 
                 </TabControl.Resources>
-                <TabItem x:Name="tab_welcome" Header="General" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-16" Foreground="#FFD48B07" FontSize="16">
+                <TabItem x:Name="tab_welcome" Header="General" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-16" Foreground="#FFD48B07" FontSize="16" Loaded="tab_welcome_Loaded">
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
-
-
-
-                    <Grid Background="#FFE5E5E5" Margin="15,0,0,0"/>
+                    <Grid x:Name="welcomegrd" Background="White" Margin="15,0,0,0"/>
                     <!--<Label Content="Content goes here..." />-->
                 </TabItem>
                 <TabItem Header="Book Management" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-24" Foreground="#FFD48B07" FontSize="16" >
-                    <!--<Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+
+                    <Grid Background="#CC016114" Margin="15,0,0,0">
                         <TabControl Padding="2,2,2,2">
-                            <TabItem x:Name="tabitem_userconfirm" Header="Teacher Confirmation" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_userconfirm_Loaded">
-                                <Grid x:Name="teacherconfirmgrd" Background="#FFE5E5E5"/>
+                            <TabItem x:Name="tabitem_add_book" Header="Book Add" Height="50" Width="200" Margin="-2,-2,-2,1" Loaded="tabitem_add_book_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
+                                <Grid x:Name="addbookgrd" Background="White"/>
                             </TabItem>
-                            <TabItem x:Name="Add_New_User" Header="Add New User" Width="200" Height="50" Loaded="Add_New_User_Loaded">
-                                <Grid x:Name="addusergrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_edit_book" Header="Edit Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_edit_book_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
+                                <Grid x:Name="editbookgrd" Background="White" />
                             </TabItem>
-                            <TabItem x:Name="tab_user_edit" Header="Edit User" Width="200" Height="50" Loaded="tab_user_edit_Loaded">
-                                <Grid x:Name="editusergrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_delete_book" Header="Delete Book" Width="200" Height="50"  Margin="-2,-2,-2,1" Loaded="tab_delete_book_Loaded" Background="#3308FF00" BorderBrush="#FF016114">
+                                <Grid x:Name="clearbookgrd" Background="White" />
                             </TabItem>
-                            <TabItem x:Name="tabitem_deleteuser" Header="Delete User" Width="200" Height="50" Loaded="tabitem_deleteuser_Loaded">
-                                <Grid x:Name="deleteusergrd" Background="#FFE5E5E5" />
-                            </TabItem>
-                        </TabControl>
-                    </Grid>-->
-                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
-                        <TabControl Padding="2,2,2,2">
-                            <TabItem x:Name="tabitem_add_book" Header="Book Add" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_add_book_Loaded">
-                                <Grid x:Name="addbookgrd" Background="#FFE5E5E5"/>
-                            </TabItem>
-                            <TabItem x:Name="tab_edit_book" Header="Edit Book" Width="200" Height="50" Loaded="tab_edit_book_Loaded">
-                                <Grid x:Name="editbookgrd" Background="#FFE5E5E5" />
-                            </TabItem>
-                            <TabItem x:Name="tab_delete_book" Header="Delete Book" Width="200" Height="50" Loaded="tab_delete_book_Loaded">
-                                <Grid x:Name="clearbookgrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_deletedbook" Header="Deleted Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_deletedbook_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="deletedbooksgrd" Background="White" />
                             </TabItem>
 
                         </TabControl>
                     </Grid>
-                    
-                    
+
+
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
                     <!--<Label Content="Content goes here..." />-->
                 </TabItem>
                 <TabItem Header="Escrow Managemenet" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-32" Foreground="#FFD48B07" FontSize="15" >
-                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+                    <Grid Background="#CC016114" Margin="15,0,0,0">
                         <TabControl Padding="2,2,2,2">
-                            <TabItem x:Name="tabitem_overduebooks" Header="Overdue Books" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tabitem_overduebooks_Loaded">
-                                <Grid x:Name="overduegrd" Background="#FFE5E5E5"/>
+                            <TabItem x:Name="tabitem_overduebooks" Header="Overdue Books" Height="50" Width="200" Margin="-2,-2,-2,1" Loaded="tabitem_overduebooks_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="overduegrd" Background="White"/>
                             </TabItem>
-                            <TabItem x:Name="tab_returnconf" Header="Return Confirmation" Width="200" Height="50" Loaded="tab_returnconf_Loaded">
-                                <Grid x:Name="returnconfgrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_returnconf" Header="Return Confirmation" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_returnconf_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="returnconfgrd" Background="White" />
                             </TabItem>
-                            <TabItem x:Name="tab_LendBook" Header="Lend Book" Width="200" Height="50" Loaded="tab_LendBook_Loaded">
-                                <Grid x:Name="lendbookgrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_LendBook" Header="Lend Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_LendBook_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="lendbookgrd" Background="White" />
                             </TabItem>
-                            <TabItem x:Name="tab_Returnbook" Header="Return Book" Width="200" Height="50" Loaded="tab_Returnbook_Loaded">
-                                <Grid x:Name="returnbookgrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_Returnbook" Header="Return Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_Returnbook_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="returnbookgrd" Background="White" />
                             </TabItem>
                         </TabControl>
                     </Grid>
@@ -133,22 +116,22 @@
                     <!--<Label Content="Content goes here..." />-->
                 </TabItem>
                 <TabItem Header="My Books" Width="160" Background="#8C2C4B7D" BorderBrush="{x:Null}" Height="55" Margin="-2,-2,-14,-40" Foreground="#FFD48B07" FontSize="15" >
-                    <Grid Background="#FF6B5C6F" Margin="15,0,0,0">
+                    <Grid Background="#CC016114" Margin="15,0,0,0">
                         <TabControl Padding="2,2,2,2">
                             <!--<TabItem x:Name="outofdate" Header="Out of Date Book" Width="200" Height="50" Loaded="outofdate_Loaded">
                                 <Grid x:Name="outofdatestudentgrd" Background="#FFE5E5E5" />
                             </TabItem>-->
-                            
+
                             <!--<TabItem x:Name="tab_myescrowbook" Header="My Escrow Books" Width="200" Height="50" Loaded="tab_myescrowbook_Loaded">
                                 <Grid x:Name="myescrowbookgrd" Background="#FFE5E5E5" />
                             </TabItem>-->
-                            <TabItem x:Name="tab_borrowbooks" Header="Borrow Book" Height="50" Width="200" Margin="-2,-2,-2,0" Loaded="tab_borrowbooks_Loaded">
-                                <Grid x:Name="borrowbooksgrd" Background="#FFE5E5E5"/>
+                            <TabItem x:Name="tab_borrowbooks" Header="Borrow Book" Height="50" Width="200" Margin="-2,-2,-2,1" Loaded="tab_borrowbooks_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="borrowbooksgrd" Background="White"/>
                             </TabItem>
-                            <TabItem x:Name="tab_Returnbookstudent" Header="Return Book" Width="200" Height="50" Loaded="tab_Returnbookstudent_Loaded">
-                                <Grid x:Name="Returnbookstudentgrd" Background="#FFE5E5E5" />
+                            <TabItem x:Name="tab_Returnbookstudent" Header="Return Book" Width="200" Height="50" Margin="-2,-2,-2,1" Loaded="tab_Returnbookstudent_Loaded" BorderBrush="#FF016114" Background="#3308FF00">
+                                <Grid x:Name="Returnbookstudentgrd" Background="White" />
                             </TabItem>
-                            
+
                         </TabControl>
                     </Grid>
                     <TabItem.Effect>
@@ -170,16 +153,17 @@
                     <TabItem.Effect>
                         <DropShadowEffect/>
                     </TabItem.Effect>
-                    --><!--<Label Content="Content goes here..." />--><!--
+                    -->
+                <!--<Label Content="Content goes here..." />-->
+                <!--
                 </TabItem>-->
             </TabControl>
 
         </Grid>
-        <Label x:Name="Dbopening" Content="Label" HorizontalAlignment="Left" Margin="4,593,0,0" VerticalAlignment="Top" Width="171" FontSize="9" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Foreground="White" Height="30" Grid.Row="1"/>
-        <Label x:Name="lblforadmin" Content="gçşlptjdüğ" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblforadmin" Content="teacher" Margin="930,45,0,45" Background="{x:Null}" HorizontalAlignment="Left" MinWidth="85" HorizontalContentAlignment="Right" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
         <Label x:Name="lblforteacher"  Content="Teacherg" Margin="930,80,0,10" Background="{x:Null}" HorizontalAlignment="Left" HorizontalContentAlignment="Right" MinWidth="85" Width="124" FontSize="16" Padding="5,0,5,5" VerticalContentAlignment="Center"/>
         <Label Content="Welcome" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Width="124" Height="30" HorizontalContentAlignment="Right" FontFamily="Lucida Handwriting" FontSize="24" Padding="0,-1,1,5"/>
-       
+
 
 
     </Grid>

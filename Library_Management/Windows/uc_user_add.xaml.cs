@@ -71,18 +71,19 @@ namespace Library_Management.Windows
             else if (cmbbx_rankselect.SelectedIndex == 1) userrank = 1;
 
             int irUserSalt = new Random().Next();
+            int irUserSalt1 = new Random().Next();
 
-            string srUserHashedPassword = PublicMethods.returnUserHashedPw(passwd_pass.Password.ToString(), irUserSalt.ToString());
+            string srUserHashedPassword = PublicMethods.returnUserHashedPw(passwd_pass.Password.ToString(), irUserSalt.ToString(), irUserSalt1.ToString());
 
            
             string escrowlimit = Dbaseconnection.selectTable("select TotalBook from tblSettings").Rows[0][0].ToString();
-            string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread)
-  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread)";
+            string srInsertCmd = $@"  insert into tblUsers (UserName,Email,Password,UserRank,PwSalt,Phone,NameSurname,escrowlimit,totalread,PwSalt1)
+  values (@UserName,@Email,@Password,@UserRank,@PwSalt,@Phone,@NameSurname,@escrowlimit,@totalread,@PwSalt1)";
 
-            List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread" };
+            List<string> lstParameterNames = new List<string> { "@UserName", "@Email", "@Password", "@UserRank", "@PwSalt", "@Phone", "@NameSurname", "@escrowlimit", "@totalread", "@PwSalt1" };
 
 
-            List<object> lstValues = new List<object> { username_txtbx.Text, email_txtbx.Text, srUserHashedPassword, userrank, irUserSalt, phone_txtbx.Text, namesurname_txtbx.Text, escrowlimit, "0" };
+            List<object> lstValues = new List<object> { username_txtbx.Text, email_txtbx.Text, srUserHashedPassword, userrank, irUserSalt, phone_txtbx.Text, namesurname_txtbx.Text, escrowlimit, "0", irUserSalt1 };
 
             var vrRegisterResult = Dbaseconnection.cmd_UpdateDeleteQuery(srInsertCmd, lstParameterNames, lstValues);
 
@@ -93,6 +94,18 @@ namespace Library_Management.Windows
 
             }
             else MessageBox.Show("Failed to add user, please check again");
+            email_txtbx.Text = "";
+            namesurname_txtbx.Text = "";
+            phone_txtbx.Text = "";
+            username_txtbx.Text = "";
+            passwd_pass.Password = "";
+            passwd_pass_ext.Password = "";
+            cmbbx_rankselect.SelectedIndex = -1;
+
+
+
+
+
         }
 
 
