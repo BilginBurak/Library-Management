@@ -35,8 +35,8 @@ namespace Library_Management
             Random randomforactive = new();
             int rndact = randomforactive.Next(10, 80);
             actLbl.Content = rndact.ToString();
-            Dbaseconnection.DbConTest();
-            Dbopening.Content = Dbaseconnection.DbConState;
+            //Dbaseconnection.DbConTest();
+            //Dbopening.Content = Dbaseconnection.DbConState;
 
         }
 

@@ -14,7 +14,7 @@ namespace Library_Management.Classes
         public static bool AddDatabasefrombookAddWindow(ParametersforDataBase senddata)
         {
             sbyte checkdatabase = 0;
-            SQLiteConnection sQLiteConnectionsendData = new SQLiteConnection(Dbaseconnection.DbAdress);
+            SQLiteConnection sQLiteConnectionsendData = new SQLiteConnection(Dbaseconnection.srConnectionString);
             SQLiteCommand sQLiteCommandsendData = new SQLiteCommand("Insert into tbl_BookList (ID,BookTitle,AuthorID,ISBN,Genre,PuplisherID,PublishDate,PageCount,EscrowStatus values(@ID,@BookTitle,@AuthorID,@ISBN,@Genre,@PuplisherID,@PublishDate,@PageCount,@EscrowStatus", sQLiteConnectionsendData);
 
             sQLiteCommandsendData.Parameters.AddWithValue("@ID", senddata.BookID);
@@ -46,7 +46,7 @@ namespace Library_Management.Classes
         public static bool fillGridfromDatabase(DataGrid grid)
         {
             sbyte checkdatagrid = 0;
-            SQLiteConnection sQLiteConnectionfordataGrd = new SQLiteConnection(Dbaseconnection.DbAdress);
+            SQLiteConnection sQLiteConnectionfordataGrd = new SQLiteConnection(Dbaseconnection.srConnectionString);
             SQLiteCommand sQLiteCommand = new SQLiteCommand("select * from tbl_BookList", sQLiteConnectionfordataGrd);
             try
             {

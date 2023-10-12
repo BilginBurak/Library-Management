@@ -25,12 +25,12 @@
                     </Image.Effect>
                     <Image.Style>
                         <Style TargetType="Image">
-                            <Setter Property="Source" Value="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\searchadminandteacher.png"/>
+                            <Setter Property="Source" Value="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\searchadminandteacher.png"/>
                             <Setter Property="Height" Value="auto"/>
                             <Setter Property="Width" Value="75"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Source" Value="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\searchadminandteacher.png"/>
+                                    <Setter Property="Source" Value="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\searchadminandteacher.png"/>
                                     <Setter Property="Width" Value="85"/>
 
                                 </Trigger>

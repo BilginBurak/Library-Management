@@ -19,7 +19,7 @@ namespace Library_Management.Classes
         public static bool fillGridfromDatabase(DataGrid grid)
         {
             sbyte checkdatagrid = 0;
-            SQLiteConnection sQLiteConnectionfordataGrd = new SQLiteConnection(Dbaseconnection.DbAdress);
+            SQLiteConnection sQLiteConnectionfordataGrd = new SQLiteConnection(Dbaseconnection.srConnectionString);
             SQLiteCommand sQLiteCommand = new SQLiteCommand("select * from tbl_BookList", sQLiteConnectionfordataGrd);
             try
             {

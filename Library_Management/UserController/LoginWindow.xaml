@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management.UserController"
         mc:Ignorable="d"
-        Title="Login Library" Height="750" Width="1200" ResizeMode="CanMinimize" Icon="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\Login_title_icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="Black">
+        Title="Login Library" Height="750" Width="1200" ResizeMode="CanMinimize" Icon="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\Login_title_icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Background="Black">
     <Grid>
         <Grid.Background>
             <ImageBrush Opacity="0.45" Stretch="UniformToFill" ImageSource="/UserController/SplashScreen.png"/>
@@ -20,7 +20,7 @@
 
 
         <Label x:Name="lbl_wellcome" Content="WELCOME" HorizontalAlignment="Left" Margin="45,75,0,0" VerticalAlignment="Top" FontSize="45" FontFamily="Monotype Corsiva"  Foreground="White"/>
-        <Image x:Name="icn_user" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\username_login1.png" Margin="58,243,0,0" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Width="30"/>
+        <Image x:Name="icn_user" Source="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\username_login1.png" Margin="58,243,0,0" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Width="30"/>
 
         <Label x:Name="loginUserName_lbl" Content="Username, phone or e-mail" HorizontalAlignment="Left" Margin="99,242,0,0" VerticalAlignment="Top" Width="222" Height="32" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsEnabled="False" IsHitTestVisible="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
         <Label x:Name="loginPasswd_lbl" Content="Password" HorizontalAlignment="Left" Margin="99,332,0,0" VerticalAlignment="Top" Width="114" Height="33" Foreground="#FFE0D5D5" VerticalContentAlignment="Center" IsHitTestVisible="False" IsEnabled="False" Panel.ZIndex="1" Padding="18,5,5,5"/>
@@ -61,7 +61,7 @@
 
 
 
-        <Image x:Name="icn_passwd" HorizontalAlignment="Left" Height="30" Margin="58,334,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\passwd_login1.png" OpacityMask="White"/>
+        <Image x:Name="icn_passwd" HorizontalAlignment="Left" Height="30" Margin="58,334,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\passwd_login1.png" OpacityMask="White"/>
         <Button x:Name="loginbtn_inloginwindow"  Content="LOGIN" HorizontalAlignment="Left" Margin="78,478,0,0" VerticalAlignment="Top" Width="278" Height="36" BorderBrush="White" Foreground="White" BorderThickness="3,3,3,3" UseLayoutRounding="False" FontSize="16" Click="loginbtn_inloginwindow_Click" >
             <!--<Button.Background>
                 <SolidColorBrush Color="White" Opacity="0.2"/>

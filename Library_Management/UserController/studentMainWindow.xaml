@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management"
         mc:Ignorable="d"
-        Title="Library Management System" Height="800" Width="1215" ResizeMode="CanMinimize" Background="#FFFEFEE2" Icon="/cloud-library.png" Loaded="Student_control_panel_Loaded">
+        Title="Library Management System" Height="800" Width="1215" ResizeMode="CanMinimize" Background="#FFFEFEE2" Icon="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\cloud-library.png" Loaded="Student_control_panel_Loaded">
     <Grid Background="#FFFFFFD3" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -30,7 +30,7 @@
                             <Setter Property="Width" Value="75"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Source" Value="C:\Users\Burak\Desktop\Kutuphane\Library_Management\Library_Management\images\icons\searchadminandteacher.png"/>
+                                    <Setter Property="Source" Value="C:\Users\burak\Desktop\Library-Management\Library_Management\images\icons\searchadminandteacher.png"/>
                                     <Setter Property="Width" Value="85"/>
 
                                 </Trigger>

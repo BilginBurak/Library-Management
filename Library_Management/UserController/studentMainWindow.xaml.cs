@@ -36,7 +36,7 @@ namespace Library_Management
             if (PublicMethods.loggedUserRank == "-1") 
             {
                 
-                var uriSource = new Uri("C:/Users/Burak/Desktop/Kutuphane/Library_Management/Library_Management/teacher.png");
+                var uriSource = new Uri("C:/Users/burak/Desktop/Library-Management/Library_Management/images/icons/teacher.png");
                 profilphoto.Source = new BitmapImage(uriSource);
             } 
         

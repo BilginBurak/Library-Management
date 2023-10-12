@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -98,13 +99,18 @@ namespace Library_Management.Windows
                 DataRowView drv = datagrd_clearBook.SelectedItem as DataRowView;
 
 
+
                 MessageBoxResult result = MessageBox.Show("Are you sure? This Book will be DELETED", "Sure?", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
 
                 if (result == MessageBoxResult.Yes)
                 {
-                    string srQuery0= $@" insert into tblDeletedBooks ( BookID, AmountofStock, BookName, Author, Genre, Publisher, PageNumber, PublishDate, Language, ISBN) select * FROM tblBooks WHERE (BookID= '" + drv["BookID"].ToString() + "')";
+                   string srQuery0 = $@"INSERT INTO tblDeletedBooks(BookID, AmountofStock, BookName, Author, Genre, Publisher, PageNumber, PublishDate, Language, ISBN)
+SELECT BookID, AmountofStock, BookName, Author, Genre, Publisher, PageNumber, PublishDate, Language, ISBN
+FROM tblBooks
+WHERE (BookID= '" + drv["BookID"].ToString() + "')";
+                    //string srQuery0= $@" insert into tblDeletedBooks ( BookID, AmountofStock, BookName, Author, Genre, Publisher, PageNumber, PublishDate, Language, ISBN) select * FROM tblBooks WHERE (BookID= '" + drv["BookID"].ToString() + "')";
                     //srQuery = $@" insert into tblNotVerified select * from tblescrowbooks where (escrowId= '" + drv["EscrowID"].ToString() + "')";
-                    string srQuery1 = $@" update tbldeletedbooks set comment='"+comment_txtbx.Text+ "', DeletionDate=GETDATE() WHERE BookID='" + drv["BookID"].ToString() + "'";
+                    string srQuery1 = $@" update tblDeletedBooks set comment='" +comment_txtbx.Text+ "', DeletionDate=GETDATE() WHERE BookID='" + drv["BookID"].ToString() + "'";
                     string srQuery2 = $@" DELETE FROM tblBooks WHERE BookID='" + drv["BookID"].ToString() + "'";
                     
                     Dbaseconnection.updateDeleteInsert(srQuery0);
